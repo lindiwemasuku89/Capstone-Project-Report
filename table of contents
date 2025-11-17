@@ -1,0 +1,49 @@
+# QCTO - Workplace Module
+
+### Project Title: Indian Agriculture Dataset Analysis and Modeling
+#### Done By: Lindiwe Masuku
+
+© ExploreAI 2024
+
+---
+
+## Table of Contents
+
+<a id="cont"></a>
+
+📋 **Navigation Menu:**
+
+| Section | Topic | Description |
+|---------|-------|-------------|
+| [📖 Background Context](#BC) | Project Overview | Introduction, goals, and significance |
+| [1. 📦 Importing Packages](#one) | Setup Environment | Import required libraries and tools |
+| [2. 📊 Data Collection](#two) | Data Sources | Describe data collection methodology |
+| [3. 📂 Loading Data](#three) | Data Loading | Load and inspect raw dataset |
+| [4. 🧹 Data Cleaning](#four) | Data Preparation | Clean and filter the dataset |
+| [5. 📈 EDA](#five) | Exploratory Analysis | Visualize patterns and relationships |
+| [6. 🤖 Modeling](#six) | Machine Learning | Train predictive models |
+| [7. ✅ Evaluation](#seven) | Model Validation | Evaluate model performance |
+| [8. 🏆 Final Model](#eight) | Best Model | Present the chosen model |
+| [9. 🎯 Conclusion](#nine) | Summary & Future Work | Results and recommendations |
+| [10. 📚 References](#ten) | Citations | Sources and references |
+
+---
+
+**Quick Navigation:**
+- [🔝 Jump to Top](#cont)
+- [📊 Go to Data Section](#two)
+- [🤖 Go to Modeling](#six)
+- [🏆 Final Results](#eight)
+
+---
+
+**Project Status:** 
+- ✅ Data Loading Complete
+- ✅ Data Cleaning Complete  
+- ✅ EDA Complete
+- ✅ Modeling Complete
+- 🔄 Evaluation in Progress
+- ⏳ Final Model Pending
+- ⏳ Conclusions Pending
+
+---
