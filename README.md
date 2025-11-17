@@ -1,6 +1,6 @@
-# India Dataset Analysis - QCTO Workplace Module
 # QCTO - Workplace Module
 ### Project Title: Indian Agriculture Dataset Analysis and Modeling
+© ExploreAI 2024
 ## 📊 Project Overview
 This project analyzes the India dataset to uncover patterns and build predictive models for understanding demographic, economic, or social trends within the Indian context. This is part of the QCTO Workplace Module coursework.
 
@@ -10,8 +10,6 @@ This project analyzes the India dataset to uncover patterns and build predictive
 - Conduct exploratory data analysis (EDA) with visualizations
 - Build and evaluate machine learning models
 - Generate insights and actionable recommendations
-
-© ExploreAI 2024
 
 ---
 
@@ -64,7 +62,62 @@ This project analyzes the India dataset to uncover patterns and build predictive
 ├── README.md                                            # Project documentation
 └── .gitignore                                           # Git ignore rules
 ```
+**Importing Packages**
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.metrics import classification_report, mean_squared_error, r2_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
 
+def load_india_data():
+    '''Load the India dataset'''
+    print('=== LOADING INDIA DATASET ===')
+    
+    # Try to load from current directory or data folder
+    data_paths = ['india_data.csv', 'Data/india_data.csv', '../india-dataset/data.csv']
+    
+    for path in data_paths:
+        if os.path.exists(path):
+            india_df = pd.read_csv(path)
+            print(f'Loaded India data from {path}: {india_df.shape}')
+            return india_df
+    
+    print('Could not find India dataset')
+    return None
+
+def explore_india_data():
+    '''Explore and analyze the India dataset'''
+    
+    # Load data
+    df = load_india_data()
+    
+    if df is None:
+        print('Cannot proceed without data files')
+        return
+    
+    print('\n=== DATA EXPLORATION ===')
+    print(f'Dataset shape: {df.shape}')
+    print('Columns:', df.columns.tolist())
+    print('\nFirst few rows:')
+    print(df.head())
+    
+    print('\nData types:')
+    print(df.dtypes)
+    
+    print('\nMissing values:')
+    print(df.isnull().sum())
+    
+    print('\nBasic statistics:')
+    print(df.describe())
+    
+    return df
+
+if __name__ == '__main__':
+    explore_india_data()
 ## 🚀 Getting Started
 
 ### Prerequisites
