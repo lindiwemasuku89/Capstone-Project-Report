@@ -1,93 +1,99 @@
-# Loading Data Section - India Dataset
-# This section loads the India dataset and displays initial data exploration
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
+from sklearn.metrics import classification_report, mean_squared_error, r2_score, accuracy_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+import requests
+from io import StringIO
 
-print("=== LOADING DATA SECTION ===\n")
-
-# Load the India dataset using our predefined function
-print("📂 LOADING INDIA DATASET...")
-df = load_india_data()
-
-# Check if data was loaded successfully
-if df is not None:
-    print("✅ DATA LOADED SUCCESSFULLY!\n")
+def load_india_data():
+    '''Enhanced function to load Indian Agriculture dataset from Kaggle'''
+    print('=== LOADING INDIAN AGRICULTURE DATASET ===')
     
-    # Display basic dataset information
-    print("📊 DATASET OVERVIEW:")
-    print(f"- Shape: {df.shape[0]} rows × {df.shape[1]} columns")
-    print(f"- Size: {df.size:,} total data points")
+    # First try to load from local files (if already downloaded)
+    local_paths = [
+        'indian_agriculture_dataset.csv',
+        'agriculture_dataset.csv', 
+        'DATA/indian_agriculture_dataset.csv',
+        'data/agriculture_dataset.csv',
+        'Agriculture_dataset.csv'
+    ]
     
-    # Display first few rows
-    print(f"\n📋 FIRST 5 ROWS OF THE DATASET:")
-    print("=" * 80)
+    print('📁 Checking for local dataset files...')
+    for path in local_paths:
+        if os.path.exists(path):
+            try:
+                df = pd.read_csv(path)
+                print(f'✅ Loaded local file from {path}: {df.shape}')
+                return df
+            except Exception as e:
+                print(f'❌ Error loading {path}: {str(e)}')
+                continue
+    
+    print('❌ Local dataset not found')
+    print('\n📝 DATASET INFORMATION:')
+    print('- Source: Kaggle - Indian Agriculture Dataset')
+    print('- URL: https://www.kaggle.com/datasets/vineetkukreti/indian-agriculture-dataset')
+    print('- Content: Agricultural production data across Indian states')
+    print('- Features: State, District, Crop, Year, Season, Area, Production')
+    
+    print('\n🔧 TO DOWNLOAD THE DATASET:')
+    print('1. Visit: https://www.kaggle.com/datasets/vineetkukreti/indian-agriculture-dataset')
+    print('2. Click "Download" to get the CSV file')
+    print('3. Place the downloaded file in your working directory')
+    print('4. Rename it to "indian_agriculture_dataset.csv" (optional)')
+    
+    # Create a sample dataset based on the actual structure for demonstration
+    print('\n🏗️ Creating sample Indian Agriculture dataset for demonstration...')
+    
+    sample_data = {
+        'State_Name': ['Uttar Pradesh', 'Maharashtra', 'Punjab', 'Haryana', 'West Bengal'] * 4,
+        'District_Name': ['Agra', 'Pune', 'Ludhiana', 'Karnal', 'Kolkata'] * 4,
+        'Crop_Year': [2018, 2019, 2020, 2021] * 5,
+        'Season': ['Kharif', 'Rabi', 'Summer', 'Kharif', 'Rabi'] * 4,
+        'Crop': ['Rice', 'Wheat', 'Sugarcane', 'Cotton', 'Maize'] * 4,
+        'Area': np.random.uniform(1000, 50000, 20),  # Area in hectares
+        'Production': np.random.uniform(5000, 200000, 20)  # Production in tonnes
+    }
+    
+    df = pd.DataFrame(sample_data)
+    print(f'✅ Sample dataset created: {df.shape}')
+    print('Note: This is sample data. Please download the actual Kaggle dataset for real analysis.')
+    
+    return df
+
+def explore_india_data():
+    '''Explore and analyze the Indian Agriculture dataset'''
+    
+    # Load data
+    df = load_india_data()
+    
+    if df is None:
+        print('Cannot proceed without data files')
+        return
+    
+    print('\n=== INITIAL DATA EXPLORATION ===')
+    print(f'Dataset shape: {df.shape}')
+    print('Columns:', df.columns.tolist())
+    print('\nFirst few rows:')
     print(df.head())
     
-    # Display last few rows
-    print(f"\n📋 LAST 5 ROWS OF THE DATASET:")
-    print("=" * 80)
-    print(df.tail())
+    print('\nData types:')
+    print(df.dtypes)
     
-    # Display column names and their data types
-    print(f"\n🏷️ COLUMN INFORMATION:")
-    print("=" * 80)
-    for i, (col, dtype) in enumerate(zip(df.columns, df.dtypes), 1):
-        sample_value = df[col].dropna().iloc[0] if not df[col].dropna().empty else "N/A"
-        print(f"{i:2d}. {col:<25} | Type: {str(dtype):<12} | Sample: {sample_value}")
+    print('\nMissing values:')
+    print(df.isnull().sum())
     
-    # Display basic statistics
-    print(f"\n📈 BASIC STATISTICS:")
-    print("=" * 80)
+    print('\nBasic statistics:')
+    print(df.describe())
     
-    # Numerical columns statistics
-    numerical_cols = df.select_dtypes(include=[np.number]).columns
-    if len(numerical_cols) > 0:
-        print("NUMERICAL COLUMNS:")
-        print(df[numerical_cols].describe())
-    
-    # Categorical columns information
-    categorical_cols = df.select_dtypes(include=['object']).columns
-    if len(categorical_cols) > 0:
-        print(f"\n📝 CATEGORICAL COLUMNS SUMMARY:")
-        for col in categorical_cols:
-            unique_count = df[col].nunique()
-            print(f"- {col}: {unique_count} unique values")
-            if unique_count <= 10:  # Show values if not too many
-                print(f"  Values: {list(df[col].unique())}")
-    
-    # Memory usage information
-    print(f"\n💾 MEMORY USAGE:")
-    memory_usage = df.memory_usage(deep=True)
-    total_memory = memory_usage.sum() / (1024 ** 2)  # Convert to MB
-    print(f"- Total Memory Usage: {total_memory:.2f} MB")
-    print(f"- Average per column: {total_memory/len(df.columns):.2f} MB")
-    
-    # Check for duplicate rows
-    duplicate_count = df.duplicated().sum()
-    print(f"\n🔍 DATA QUALITY CHECKS:")
-    print(f"- Duplicate rows: {duplicate_count}")
-    print(f"- Unique rows: {len(df) - duplicate_count}")
-    
-    # Store the loaded dataframe for use in subsequent sections
-    globals()['india_df'] = df
-    print(f"\n✅ Dataset stored in variable 'india_df' for further analysis")
-    
-else:
-    print("❌ FAILED TO LOAD DATASET")
-    print("\n🔧 TROUBLESHOOTING STEPS:")
-    print("1. Ensure the India dataset CSV file is in your working directory")
-    print("2. Check that the file name matches one of these patterns:")
-    print("   - india_data.csv")
-    print("   - Data/india_data.csv") 
-    print("   - ../india-dataset/data.csv")
-    print("3. Verify the file is not corrupted and is in proper CSV format")
-    print("4. Check file permissions")
-    
-    # Provide alternative loading methods
-    print(f"\n📁 ALTERNATIVE LOADING METHODS:")
-    print("# If your file has a different name or location, use:")
-    print("# df = pd.read_csv('your_file_path_here.csv')")
-    print("# For example:")
-    print("# df = pd.read_csv('C:/Users/YourName/Documents/india_dataset.csv')")
+    return df
 
-print("\n" + "="*80)
-print("DATA LOADING SECTION COMPLETE")
-print("="*80)
+if __name__ == '__main__':
+    explore_india_data()
