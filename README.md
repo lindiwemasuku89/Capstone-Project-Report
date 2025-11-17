@@ -1,5 +1,6 @@
 # India Dataset Analysis - QCTO Workplace Module
-
+# QCTO - Workplace Module
+### Project Title: Indian Agriculture Dataset Analysis and Modeling
 ## 📊 Project Overview
 This project analyzes the India dataset to uncover patterns and build predictive models for understanding demographic, economic, or social trends within the Indian context. This is part of the QCTO Workplace Module coursework.
 
@@ -9,10 +10,6 @@ This project analyzes the India dataset to uncover patterns and build predictive
 - Conduct exploratory data analysis (EDA) with visualizations
 - Build and evaluate machine learning models
 - Generate insights and actionable recommendations
-# QCTO - Workplace Module
-
-### Project Title: Indian Agriculture Dataset Analysis and Modeling
-#### Done By: Lindiwe Masuku
 
 © ExploreAI 2024
 
@@ -182,7 +179,7 @@ This is an academic project for QCTO Workplace Module. Feedback and suggestions 
 
 ### Contact:
 For technical issues or questions about this project, please create an issue in the repository.
-
+Done By: Lindiwe Masuku
 ---
 
 **Last Updated:** November 2024  
