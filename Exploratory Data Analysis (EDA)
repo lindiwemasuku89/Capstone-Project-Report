@@ -1,0 +1,298 @@
+# Exploratory Data Analysis (EDA) - India Dataset
+# This section explores patterns, trends, and relationships in the data
+
+print("=== EXPLORATORY DATA ANALYSIS (EDA) SECTION ===\n")
+
+# Import additional visualization libraries
+import warnings
+warnings.filterwarnings('ignore')
+
+# Set up plotting style
+plt.style.use('default')
+sns.set_palette("husl")
+
+try:
+    # Use cleaned data from previous section
+    if 'cleaned_df' in globals():
+        df = cleaned_df.copy()
+        print("✅ Using cleaned dataset from previous section")
+    elif 'india_df' in globals():
+        df = india_df.copy()
+        print("✅ Using original dataset")
+    else:
+        df = load_india_data()
+        if df is None:
+            raise Exception("No data available for EDA")
+    
+    print(f"📊 Dataset shape: {df.shape}")
+    print(f"📋 Columns: {list(df.columns)}\n")
+    
+    # ===== SECTION 1: STATISTICAL OVERVIEW =====
+    print("="*70)
+    print("SECTION 1: STATISTICAL OVERVIEW")
+    print("="*70)
+    
+    # Separate numerical and categorical columns
+    numerical_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+    categorical_cols = df.select_dtypes(include=['object', 'category']).columns.tolist()
+    
+    print(f"📊 DATA COMPOSITION:")
+    print(f"   - Numerical columns: {len(numerical_cols)}")
+    print(f"   - Categorical columns: {len(categorical_cols)}")
+    print(f"   - Total columns: {len(df.columns)}")
+    
+    # Statistical summary for numerical columns
+    if numerical_cols:
+        print(f"\n📈 NUMERICAL COLUMNS STATISTICAL SUMMARY:")
+        print(df[numerical_cols].describe().round(2))
+        
+        # Additional statistics
+        print(f"\n📊 ADDITIONAL STATISTICS:")
+        for col in numerical_cols:
+            skewness = df[col].skew()
+            kurtosis = df[col].kurtosis()
+            print(f"   {col}:")
+            print(f"      - Skewness: {skewness:.2f}")
+            print(f"      - Kurtosis: {kurtosis:.2f}")
+            print(f"      - Range: [{df[col].min():.2f}, {df[col].max():.2f}]")
+    
+    # Categorical columns summary
+    if categorical_cols:
+        print(f"\n📝 CATEGORICAL COLUMNS SUMMARY:")
+        for col in categorical_cols:
+            unique_count = df[col].nunique()
+            mode_val = df[col].mode().iloc[0] if not df[col].mode().empty else "N/A"
+            print(f"   {col}:")
+            print(f"      - Unique values: {unique_count}")
+            print(f"      - Most common: {mode_val}")
+            print(f"      - Distribution: {dict(df[col].value_counts().head(3))}")
+    
+    # ===== SECTION 2: DATA DISTRIBUTIONS =====
+    print(f"\n" + "="*70)
+    print("SECTION 2: DATA DISTRIBUTIONS AND VISUALIZATIONS")
+    print("="*70)
+    
+    # Create visualizations for numerical columns
+    if numerical_cols:
+        # Distribution plots
+        n_cols = min(3, len(numerical_cols))
+        n_rows = (len(numerical_cols) + n_cols - 1) // n_cols
+        
+        fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 5*n_rows))
+        if n_rows == 1:
+            axes = [axes] if n_cols == 1 else axes
+        else:
+            axes = axes.flatten()
+        
+        print("📊 Creating distribution plots...")
+        
+        for i, col in enumerate(numerical_cols):
+            if i < len(axes):
+                # Histogram with KDE
+                sns.histplot(data=df, x=col, kde=True, ax=axes[i])
+                axes[i].set_title(f'Distribution of {col}')
+                axes[i].grid(True, alpha=0.3)
+        
+        # Hide empty subplots
+        for i in range(len(numerical_cols), len(axes)):
+            axes[i].set_visible(False)
+        
+        plt.tight_layout()
+        plt.show()
+        
+        # Box plots for outlier visualization
+        if len(numerical_cols) > 1:
+            plt.figure(figsize=(12, 6))
+            df[numerical_cols].boxplot()
+            plt.title('Box Plots - Outlier Detection')
+            plt.xticks(rotation=45)
+            plt.tight_layout()
+            plt.show()
+    
+    # Categorical data visualization
+    if categorical_cols:
+        print("📊 Creating categorical distribution plots...")
+        
+        for col in categorical_cols[:3]:  # Limit to first 3 for space
+            plt.figure(figsize=(10, 5))
+            
+            # Count plot
+            plt.subplot(1, 2, 1)
+            sns.countplot(data=df, x=col)
+            plt.title(f'Count Distribution of {col}')
+            plt.xticks(rotation=45)
+            
+            # Pie chart
+            plt.subplot(1, 2, 2)
+            df[col].value_counts().head(5).plot(kind='pie', autopct='%1.1f%%')
+            plt.title(f'Proportion of {col} (Top 5)')
+            plt.ylabel('')
+            
+            plt.tight_layout()
+            plt.show()
+    
+    # ===== SECTION 3: CORRELATION ANALYSIS =====
+    print(f"\n" + "="*70)
+    print("SECTION 3: CORRELATION ANALYSIS")
+    print("="*70)
+    
+    if len(numerical_cols) > 1:
+        # Calculate correlation matrix
+        correlation_matrix = df[numerical_cols].corr()
+        
+        print("📊 CORRELATION MATRIX:")
+        print(correlation_matrix.round(3))
+        
+        # Heatmap visualization
+        plt.figure(figsize=(10, 8))
+        mask = np.triu(np.ones_like(correlation_matrix, dtype=bool))
+        sns.heatmap(correlation_matrix, 
+                   mask=mask,
+                   annot=True, 
+                   cmap='coolwarm', 
+                   center=0,
+                   square=True,
+                   linewidths=0.5)
+        plt.title('Correlation Heatmap')
+        plt.tight_layout()
+        plt.show()
+        
+        # Find strongest correlations
+        print(f"\n🔍 STRONGEST CORRELATIONS:")
+        corr_pairs = []
+        for i in range(len(correlation_matrix.columns)):
+            for j in range(i+1, len(correlation_matrix.columns)):
+                corr_val = correlation_matrix.iloc[i, j]
+                if abs(corr_val) > 0.5:  # Strong correlation threshold
+                    corr_pairs.append((
+                        correlation_matrix.columns[i], 
+                        correlation_matrix.columns[j], 
+                        corr_val
+                    ))
+        
+        if corr_pairs:
+            for col1, col2, corr in sorted(corr_pairs, key=lambda x: abs(x[2]), reverse=True):
+                print(f"   {col1} ↔ {col2}: {corr:.3f}")
+        else:
+            print("   No strong correlations (>0.5) found")
+    
+    # ===== SECTION 4: BIVARIATE ANALYSIS =====
+    print(f"\n" + "="*70)
+    print("SECTION 4: BIVARIATE ANALYSIS")
+    print("="*70)
+    
+    # Scatter plots for numerical variables
+    if len(numerical_cols) >= 2:
+        print("📊 Creating scatter plots for top correlated pairs...")
+        
+        # Create scatter plots for most correlated pairs
+        if 'corr_pairs' in locals() and corr_pairs:
+            fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+            axes = axes.flatten()
+            
+            for i, (col1, col2, corr) in enumerate(corr_pairs[:4]):
+                sns.scatterplot(data=df, x=col1, y=col2, ax=axes[i])
+                axes[i].set_title(f'{col1} vs {col2} (r={corr:.3f})')
+                
+                # Add regression line
+                sns.regplot(data=df, x=col1, y=col2, ax=axes[i], scatter=False, color='red')
+            
+            plt.tight_layout()
+            plt.show()
+        
+        # Pair plot for numerical variables (sample if too many)
+        if len(numerical_cols) <= 5:
+            print("📊 Creating pair plot...")
+            sns.pairplot(df[numerical_cols])
+            plt.show()
+    
+    # ===== SECTION 5: CATEGORICAL VS NUMERICAL ANALYSIS =====
+    if categorical_cols and numerical_cols:
+        print(f"\n" + "="*70)
+        print("SECTION 5: CATEGORICAL VS NUMERICAL ANALYSIS")
+        print("="*70)
+        
+        # Box plots for each categorical vs numerical combination
+        for cat_col in categorical_cols[:2]:  # Limit for space
+            for num_col in numerical_cols[:2]:  # Limit for space
+                if df[cat_col].nunique() <= 10:  # Only for manageable categories
+                    plt.figure(figsize=(10, 6))
+                    sns.boxplot(data=df, x=cat_col, y=num_col)
+                    plt.title(f'{num_col} by {cat_col}')
+                    plt.xticks(rotation=45)
+                    plt.tight_layout()
+                    plt.show()
+                    
+                    # Statistical test (ANOVA)
+                    try:
+                        groups = [group[num_col].values for name, group in df.groupby(cat_col)]
+                        f_stat, p_value = stats.f_oneway(*groups)
+                        print(f"   ANOVA test for {num_col} across {cat_col}:")
+                        print(f"   F-statistic: {f_stat:.3f}, p-value: {p_value:.3f}")
+                        if p_value < 0.05:
+                            print(f"   ✅ Significant difference found (p < 0.05)")
+                        else:
+                            print(f"   ❌ No significant difference found (p >= 0.05)")
+                    except:
+                        print(f"   Could not perform ANOVA test for {num_col} vs {cat_col}")
+    
+    # ===== SECTION 6: KEY INSIGHTS SUMMARY =====
+    print(f"\n" + "="*70)
+    print("SECTION 6: KEY INSIGHTS AND FINDINGS")
+    print("="*70)
+    
+    insights = []
+    
+    # Data composition insights
+    insights.append(f"📊 Dataset contains {len(df)} records with {len(numerical_cols)} numerical and {len(categorical_cols)} categorical features")
+    
+    # Missing data insights
+    missing_total = df.isnull().sum().sum()
+    if missing_total == 0:
+        insights.append("✅ No missing values detected in the dataset")
+    else:
+        insights.append(f"⚠️  Dataset has {missing_total} missing values requiring attention")
+    
+    # Correlation insights
+    if 'corr_pairs' in locals() and corr_pairs:
+        strongest_corr = max(corr_pairs, key=lambda x: abs(x[2]))
+        insights.append(f"🔗 Strongest correlation: {strongest_corr[0]} ↔ {strongest_corr[1]} (r={strongest_corr[2]:.3f})")
+    
+    # Distribution insights
+    for col in numerical_cols:
+        skew = df[col].skew()
+        if abs(skew) > 1:
+            skew_type = "right-skewed" if skew > 0 else "left-skewed"
+            insights.append(f"📈 {col} is highly {skew_type} (skewness: {skew:.2f})")
+    
+    # Categorical insights
+    for col in categorical_cols:
+        if df[col].nunique() < len(df) * 0.1:  # Low cardinality
+            mode_val = df[col].mode().iloc[0]
+            mode_pct = (df[col] == mode_val).mean() * 100
+            insights.append(f"📝 {col}: Most common value is '{mode_val}' ({mode_pct:.1f}% of data)")
+    
+    print("🔍 KEY INSIGHTS DISCOVERED:")
+    for i, insight in enumerate(insights, 1):
+        print(f"{i:2d}. {insight}")
+    
+    # Store EDA results
+    eda_results = {
+        'numerical_columns': numerical_cols,
+        'categorical_columns': categorical_cols,
+        'correlation_matrix': correlation_matrix if len(numerical_cols) > 1 else None,
+        'strong_correlations': corr_pairs if 'corr_pairs' in locals() else [],
+        'insights': insights
+    }
+    
+    globals()['eda_results'] = eda_results
+    print(f"\n✅ EDA results stored in 'eda_results' variable")
+    
+    print(f"\n" + "="*80)
+    print("EXPLORATORY DATA ANALYSIS SECTION COMPLETE")
+    print("="*80)
+
+except Exception as e:
+    print(f"❌ ERROR DURING EDA: {str(e)}")
+    import traceback
+    traceback.print_exc()
