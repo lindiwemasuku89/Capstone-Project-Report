@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (optional)
+*.csv
+!sample_*.csv
+
+# OS
+.DS_Store
+Thumbs.db

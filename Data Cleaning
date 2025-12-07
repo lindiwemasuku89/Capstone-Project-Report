@@ -1,0 +1,277 @@
+# Data Cleaning and Filtering - India Dataset
+# This section handles missing values, outliers, and data quality issues
+
+print("=== DATA CLEANING AND FILTERING SECTION ===\n")
+
+# Import additional cleaning utilities
+from scipy import stats
+
+# Check if we have data from previous section
+try:
+    # Use data from loading section
+    if 'india_df' in globals():
+        df = india_df.copy()  # Work with copy to preserve original
+        print("✅ Using data from loading section")
+    else:
+        # Load fresh if not available
+        df = load_india_data()
+        if df is None:
+            # Create sample data for demonstration
+            print("📝 Creating sample India dataset for cleaning demonstration...")
+            sample_data = {
+                'State': ['Maharashtra', 'Karnataka', 'Tamil Nadu', 'Gujarat', 'Rajasthan', 'West Bengal', None],
+                'Population_Million': [112.4, 61.1, None, 60.4, 68.5, 91.3, 45.2],
+                'GDP_Trillion_Rupees': [32.4, 21.6, 23.1, None, 11.9, 17.1, 15.0],
+                'Literacy_Rate': [82.3, 75.4, 80.1, 78.0, 66.1, 76.3, 999.9],  # 999.9 is outlier
+                'Urban_Population_Percent': [45.2, 38.7, 48.4, 42.6, 24.9, 31.9, -5.0],  # -5.0 is invalid
+                'Per_Capita_Income': [180000, 275000, 198000, 215000, 118000, 87000, 250000]
+            }
+            df = pd.DataFrame(sample_data)
+            print("✅ Sample dataset created for cleaning demonstration")
+    
+    print(f"📊 Starting dataset shape: {df.shape}\n")
+    
+    # ===== STEP 1: INITIAL DATA ASSESSMENT =====
+    print("="*60)
+    print("STEP 1: INITIAL DATA ASSESSMENT")
+    print("="*60)
+    
+    # Display basic information
+    print("📋 DATASET INFO:")
+    print(f"- Shape: {df.shape}")
+    print(f"- Memory usage: {df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+    
+    # Check data types
+    print("\n📊 DATA TYPES:")
+    for col in df.columns:
+        dtype = df[col].dtype
+        unique_vals = df[col].nunique()
+        print(f"- {col:<25}: {str(dtype):<10} ({unique_vals} unique values)")
+    
+    # Missing values analysis
+    print(f"\n❌ MISSING VALUES ANALYSIS:")
+    missing_summary = df.isnull().sum()
+    total_missing = missing_summary.sum()
+    
+    if total_missing > 0:
+        print(f"Total missing values: {total_missing}")
+        print("Missing by column:")
+        for col in missing_summary.index:
+            missing_count = missing_summary[col]
+            if missing_count > 0:
+                missing_pct = (missing_count / len(df)) * 100
+                print(f"  - {col}: {missing_count} ({missing_pct:.1f}%)")
+    else:
+        print("✅ No missing values found")
+    
+    # ===== STEP 2: HANDLE MISSING VALUES =====
+    print(f"\n" + "="*60)
+    print("STEP 2: HANDLING MISSING VALUES")
+    print("="*60)
+    
+    original_shape = df.shape
+    
+    for col in df.columns:
+        missing_count = df[col].isnull().sum()
+        if missing_count > 0:
+            missing_pct = (missing_count / len(df)) * 100
+            print(f"\n🔧 Processing '{col}' ({missing_pct:.1f}% missing):")
+            
+            if missing_pct > 50:
+                print(f"   ⚠️  High missing percentage - consider dropping column")
+                # For demonstration, we'll keep but flag
+                df[col + '_missing_flag'] = df[col].isnull()
+                
+            elif df[col].dtype == 'object':
+                # For categorical/text data
+                mode_val = df[col].mode()
+                if not mode_val.empty:
+                    fill_value = mode_val.iloc[0]
+                    df[col].fillna(fill_value, inplace=True)
+                    print(f"   ✅ Filled with mode: '{fill_value}'")
+                else:
+                    df[col].fillna('Unknown', inplace=True)
+                    print(f"   ✅ Filled with 'Unknown'")
+                    
+            elif df[col].dtype in ['int64', 'float64']:
+                # For numerical data, use median (robust to outliers)
+                median_val = df[col].median()
+                df[col].fillna(median_val, inplace=True)
+                print(f"   ✅ Filled with median: {median_val}")
+    
+    # ===== STEP 3: DETECT AND HANDLE OUTLIERS =====
+    print(f"\n" + "="*60)
+    print("STEP 3: OUTLIER DETECTION AND TREATMENT")
+    print("="*60)
+    
+    numerical_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+    # Remove flag columns from outlier analysis
+    numerical_cols = [col for col in numerical_cols if not col.endswith('_missing_flag')]
+    
+    print(f"🔍 Analyzing outliers in {len(numerical_cols)} numerical columns:")
+    
+    outlier_info = {}
+    
+    for col in numerical_cols:
+        # Calculate IQR method
+        Q1 = df[col].quantile(0.25)
+        Q3 = df[col].quantile(0.75)
+        IQR = Q3 - Q1
+        
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+        
+        # Find outliers
+        outliers_mask = (df[col] < lower_bound) | (df[col] > upper_bound)
+        outlier_count = outliers_mask.sum()
+        
+        if outlier_count > 0:
+            outlier_pct = (outlier_count / len(df)) * 100
+            outlier_info[col] = {
+                'count': outlier_count,
+                'percentage': outlier_pct,
+                'lower_bound': lower_bound,
+                'upper_bound': upper_bound,
+                'outlier_values': df.loc[outliers_mask, col].tolist()
+            }
+            
+            print(f"\n📊 {col}:")
+            print(f"   - Outliers found: {outlier_count} ({outlier_pct:.1f}%)")
+            print(f"   - Normal range: [{lower_bound:.2f}, {upper_bound:.2f}]")
+            print(f"   - Outlier values: {outlier_info[col]['outlier_values']}")
+            
+            # Handle outliers based on domain knowledge
+            if 'Literacy_Rate' in col and df[col].max() > 100:
+                # Literacy rate should be 0-100
+                df[col] = df[col].clip(0, 100)
+                print(f"   ✅ Capped literacy rate to valid range [0-100]")
+            
+            elif 'Population_Percent' in col or 'Urban_Population_Percent' in col:
+                # Percentage should be 0-100
+                df[col] = df[col].clip(0, 100)
+                print(f"   ✅ Capped percentage to valid range [0-100]")
+            
+            elif outlier_pct < 5:  # If outliers are < 5% of data
+                print(f"   ℹ️  Keeping outliers (< 5% of data)")
+            else:
+                # Cap extreme outliers
+                df[col] = df[col].clip(lower_bound, upper_bound)
+                print(f"   ✅ Capped extreme outliers to IQR bounds")
+    
+    if not outlier_info:
+        print("✅ No outliers detected in numerical columns")
+    
+    # ===== STEP 4: REMOVE DUPLICATES =====
+    print(f"\n" + "="*60)
+    print("STEP 4: DUPLICATE REMOVAL")
+    print("="*60)
+    
+    initial_rows = len(df)
+    duplicate_count = df.duplicated().sum()
+    
+    print(f"🔍 Found {duplicate_count} duplicate rows")
+    
+    if duplicate_count > 0:
+        # Show sample duplicates
+        print("Sample duplicate rows:")
+        print(df[df.duplicated()].head())
+        
+        # Remove duplicates
+        df.drop_duplicates(inplace=True, ignore_index=True)
+        rows_removed = initial_rows - len(df)
+        print(f"✅ Removed {rows_removed} duplicate rows")
+    else:
+        print("✅ No duplicate rows found")
+    
+    # ===== STEP 5: DATA VALIDATION =====
+    print(f"\n" + "="*60)
+    print("STEP 5: DATA VALIDATION AND CONSISTENCY CHECKS")
+    print("="*60)
+    
+    # Check for logical inconsistencies
+    print("🔍 Checking data consistency:")
+    
+    # Example validations for India dataset
+    validation_issues = []
+    
+    # Check if any numerical values are negative where they shouldn't be
+    for col in numerical_cols:
+        if any(keyword in col.lower() for keyword in ['population', 'gdp', 'income']):
+            negative_count = (df[col] < 0).sum()
+            if negative_count > 0:
+                validation_issues.append(f"- {col}: {negative_count} negative values")
+                df[col] = df[col].abs()  # Convert to positive
+    
+    if validation_issues:
+        print("⚠️  Validation issues found and corrected:")
+        for issue in validation_issues:
+            print(f"   {issue}")
+    else:
+        print("✅ No validation issues found")
+    
+    # ===== STEP 6: DATA TYPE OPTIMIZATION =====
+    print(f"\n" + "="*60)
+    print("STEP 6: DATA TYPE OPTIMIZATION")
+    print("="*60)
+    
+    print("🔧 Optimizing data types for memory efficiency:")
+    
+    memory_before = df.memory_usage(deep=True).sum() / 1024**2
+    
+    # Convert object columns with low cardinality to category
+    for col in df.select_dtypes(include=['object']).columns:
+        unique_ratio = df[col].nunique() / len(df)
+        if unique_ratio < 0.5:  # If less than 50% unique values
+            df[col] = df[col].astype('category')
+            print(f"   - {col}: object → category ({df[col].nunique()} unique values)")
+    
+    # Downcast numerical columns where possible
+    for col in df.select_dtypes(include=['int64', 'float64']).columns:
+        if df[col].dtype == 'int64':
+            df[col] = pd.to_numeric(df[col], downcast='integer')
+        elif df[col].dtype == 'float64':
+            df[col] = pd.to_numeric(df[col], downcast='float')
+    
+    memory_after = df.memory_usage(deep=True).sum() / 1024**2
+    memory_saved = memory_before - memory_after
+    
+    print(f"   📊 Memory optimization:")
+    print(f"   - Before: {memory_before:.2f} MB")
+    print(f"   - After: {memory_after:.2f} MB")
+    print(f"   - Saved: {memory_saved:.2f} MB ({(memory_saved/memory_before)*100:.1f}%)")
+    
+    # ===== STEP 7: FINAL SUMMARY =====
+    print(f"\n" + "="*60)
+    print("STEP 7: CLEANING SUMMARY")
+    print("="*60)
+    
+    final_shape = df.shape
+    rows_processed = original_shape[0] - final_shape[0]
+    
+    print("📊 CLEANING RESULTS:")
+    print(f"   - Original shape: {original_shape}")
+    print(f"   - Final shape: {final_shape}")
+    print(f"   - Rows removed: {abs(rows_processed)}")
+    print(f"   - Data retention: {(final_shape[0]/original_shape[0])*100:.1f}%")
+    print(f"   - Columns processed: {original_shape[1]} → {final_shape[1]}")
+    
+    # Final data quality check
+    remaining_missing = df.isnull().sum().sum()
+    print(f"   - Remaining missing values: {remaining_missing}")
+    
+    # Store cleaned data
+    globals()['cleaned_df'] = df
+    print(f"\n✅ Cleaned dataset stored in 'cleaned_df' variable")
+    
+    # Display final sample
+    print(f"\n📋 CLEANED DATASET SAMPLE:")
+    print("="*60)
+    print(df.head())
+    
+    print(f"\n" + "="*80)
+    print("DATA CLEANING SECTION COMPLETE")
+    print("="*80)
+
+except Exception as e:
+    print(f"❌ ERROR DURING DATA CLEANING: {str(e)}")
+    print(f"Please ensure data is loaded from the previous section.")
