@@ -1,0 +1,409 @@
+// =====================================================
+// DAX MEASURES FOR INDIAN AGRICULTURE POWER BI DASHBOARD
+// =====================================================
+// Copy and paste these measures into your Power BI model
+// Create a new table called "Measures" and add these one by one
+
+// =====================================================
+// BASIC METRICS
+// =====================================================
+
+Total Production = 
+SUM(fact_agriculture[Production_Tonnes])
+
+Total Area = 
+SUM(fact_agriculture[Area_Hectares])
+
+Average Yield = 
+DIVIDE([Total Production], [Total Area], 0)
+
+Total Districts = 
+DISTINCTCOUNT(fact_agriculture[District_Name])
+
+Total Records = 
+COUNTROWS(fact_agriculture)
+
+// =====================================================
+// PERFORMANCE INDICATORS
+// =====================================================
+
+Production Growth % = 
+VAR CurrentYear = MAX(dim_dates[Year])
+VAR PreviousYear = CurrentYear - 1
+VAR CurrentProduction = 
+    CALCULATE(
+        [Total Production],
+        dim_dates[Year] = CurrentYear
+    )
+VAR PreviousProduction = 
+    CALCULATE(
+        [Total Production],
+        dim_dates[Year] = PreviousYear
+    )
+RETURN
+    IF(
+        PreviousProduction > 0,
+        DIVIDE(CurrentProduction - PreviousProduction, PreviousProduction, 0),
+        BLANK()
+    )
+
+Area Growth % = 
+VAR CurrentYear = MAX(dim_dates[Year])
+VAR PreviousYear = CurrentYear - 1
+VAR CurrentArea = 
+    CALCULATE(
+        [Total Area],
+        dim_dates[Year] = CurrentYear
+    )
+VAR PreviousArea = 
+    CALCULATE(
+        [Total Area],
+        dim_dates[Year] = PreviousYear
+    )
+RETURN
+    IF(
+        PreviousArea > 0,
+        DIVIDE(CurrentArea - PreviousArea, PreviousArea, 0),
+        BLANK()
+    )
+
+Yield Efficiency = 
+VAR ActualYield = [Average Yield]
+VAR BenchmarkYield = 5.0  // Adjust based on your data
+RETURN
+    DIVIDE(ActualYield, BenchmarkYield, 0)
+
+// =====================================================
+// RANKING AND COMPARISON
+// =====================================================
+
+State Production Rank = 
+RANKX(
+    ALL(dim_states[State_Name]),
+    CALCULATE([Total Production]),
+    ,
+    DESC
+)
+
+Crop Production Rank = 
+RANKX(
+    ALL(dim_crops[Crop]),
+    CALCULATE([Total Production]),
+    ,
+    DESC
+)
+
+Production vs National Average = 
+VAR StateProduction = [Total Production]
+VAR NationalAverage = 
+    CALCULATE(
+        DIVIDE([Total Production], DISTINCTCOUNT(dim_states[State_Name])),
+        ALL(dim_states)
+    )
+RETURN
+    StateProduction - NationalAverage
+
+// =====================================================
+// SEASONAL ANALYSIS
+// =====================================================
+
+Kharif Season Production = 
+CALCULATE(
+    [Total Production],
+    dim_seasons[Season] = "Kharif"
+)
+
+Rabi Season Production = 
+CALCULATE(
+    [Total Production],
+    dim_seasons[Season] = "Rabi"
+)
+
+Summer Season Production = 
+CALCULATE(
+    [Total Production],
+    dim_seasons[Season] = "Summer"
+)
+
+Dominant Season = 
+VAR KharifProd = [Kharif Season Production]
+VAR RabiProd = [Rabi Season Production]
+VAR SummerProd = [Summer Season Production]
+VAR MaxSeason = MAX(KharifProd, MAX(RabiProd, SummerProd))
+RETURN
+    SWITCH(
+        TRUE(),
+        MaxSeason = KharifProd, "Kharif",
+        MaxSeason = RabiProd, "Rabi",
+        MaxSeason = SummerProd, "Summer",
+        "Unknown"
+    )
+
+// =====================================================
+// CROP DIVERSITY METRICS
+// =====================================================
+
+Crop Diversity Count = 
+DISTINCTCOUNT(dim_crops[Crop])
+
+Crop Concentration Index = 
+SUMX(
+    VALUES(dim_crops[Crop]),
+    POWER(
+        DIVIDE(
+            CALCULATE([Total Production]),
+            [Total Production]
+        ),
+        2
+    )
+)
+
+Main Crop Contribution % = 
+VAR TopCropProduction = 
+    MAXX(
+        VALUES(dim_crops[Crop]),
+        CALCULATE([Total Production])
+    )
+RETURN
+    DIVIDE(TopCropProduction, [Total Production], 0)
+
+// =====================================================
+// TIME INTELLIGENCE
+// =====================================================
+
+Production YTD = 
+TOTALYTD([Total Production], dim_dates[Year])
+
+Production Previous Year = 
+CALCULATE(
+    [Total Production],
+    SAMEPERIODLASTYEAR(dim_dates[Year])
+)
+
+Production Moving Average (3 Years) = 
+AVERAGEX(
+    DATESINPERIOD(
+        dim_dates[Year],
+        MAX(dim_dates[Year]),
+        -3,
+        YEAR
+    ),
+    [Total Production]
+)
+
+// =====================================================
+// PRODUCTIVITY METRICS
+// =====================================================
+
+High Yield Areas = 
+CALCULATE(
+    [Total Area],
+    fact_agriculture[Yield_Per_Hectare] > 6
+)
+
+Low Yield Areas = 
+CALCULATE(
+    [Total Area],
+    fact_agriculture[Yield_Per_Hectare] < 3
+)
+
+Yield Classification = 
+VAR AvgYield = [Average Yield]
+RETURN
+    SWITCH(
+        TRUE(),
+        AvgYield >= 8, "Excellent (8+ tonnes/ha)",
+        AvgYield >= 6, "Good (6-8 tonnes/ha)",
+        AvgYield >= 4, "Average (4-6 tonnes/ha)",
+        AvgYield >= 2, "Below Average (2-4 tonnes/ha)",
+        "Poor (<2 tonnes/ha)"
+    )
+
+Production Intensity = 
+DIVIDE([Total Production], [Total Area] * DISTINCTCOUNT(dim_seasons[Season]), 0)
+
+// =====================================================
+// WEATHER IMPACT ANALYSIS
+// =====================================================
+
+Average Temperature = 
+AVERAGE(fact_agriculture[Temperature_Avg])
+
+Average Rainfall = 
+AVERAGE(fact_agriculture[Rainfall_MM])
+
+Temperature Impact = 
+VAR OptimalTemp = 25  // Optimal temperature in Celsius
+VAR ActualTemp = [Average Temperature]
+RETURN
+    1 - (ABS(ActualTemp - OptimalTemp) / OptimalTemp)
+
+Rainfall Adequacy = 
+VAR MinRainfall = 500  // Minimum required rainfall in MM
+VAR ActualRainfall = [Average Rainfall]
+RETURN
+    IF(ActualRainfall >= MinRainfall, "Adequate", "Insufficient")
+
+// =====================================================
+// FINANCIAL PROJECTIONS
+// =====================================================
+
+Estimated Revenue (₹) = 
+VAR RicePrice = 2000      // Price per tonne in Rupees
+VAR WheatPrice = 1800
+VAR SugarcanePrice = 3500
+VAR CottonPrice = 5000
+VAR DefaultPrice = 2500   // Default price for other crops
+
+RETURN
+SUMX(
+    fact_agriculture,
+    VAR CropType = RELATED(dim_crops[Crop])
+    VAR Production = fact_agriculture[Production_Tonnes]
+    VAR Price = 
+        SWITCH(
+            CropType,
+            "Rice", RicePrice,
+            "Wheat", WheatPrice,
+            "Sugarcane", SugarcanePrice,
+            "Cotton", CottonPrice,
+            DefaultPrice
+        )
+    RETURN Production * Price
+)
+
+Revenue Per Hectare = 
+DIVIDE([Estimated Revenue (₹)], [Total Area], 0)
+
+// =====================================================
+// ALERTS AND FLAGS
+// =====================================================
+
+Yield Alert = 
+IF([Average Yield] < 3, "⚠️ Low Yield Alert", "✅ Normal")
+
+Production Decline Alert = 
+IF([Production Growth %] < -0.1, "⚠️ Production Declining", "✅ Stable/Growing")
+
+Area Alert = 
+VAR TotalArea = [Total Area]
+VAR HighYieldArea = [High Yield Areas]
+VAR LowYieldRatio = DIVIDE(TotalArea - HighYieldArea, TotalArea, 0)
+RETURN
+    IF(LowYieldRatio > 0.7, "⚠️ Productivity Concern", "✅ Good Productivity")
+
+// =====================================================
+// FORECASTING MEASURES
+// =====================================================
+
+Projected Next Year Production = 
+VAR GrowthRate = [Production Growth %]
+VAR CurrentProduction = [Total Production]
+RETURN
+    IF(
+        NOT(ISBLANK(GrowthRate)),
+        CurrentProduction * (1 + GrowthRate),
+        CurrentProduction
+    )
+
+Target vs Actual = 
+VAR Target = [Total Production] * 1.1  // 10% growth target
+VAR Actual = [Total Production]
+RETURN
+    Actual - Target
+
+// =====================================================
+// CONDITIONAL FORMATTING VALUES
+// =====================================================
+
+Yield Color = 
+VAR Yield = [Average Yield]
+RETURN
+    SWITCH(
+        TRUE(),
+        Yield >= 8, "#006400",    // Dark Green
+        Yield >= 6, "#90EE90",    // Light Green
+        Yield >= 4, "#FFD700",    // Gold
+        Yield >= 2, "#FFA500",    // Orange
+        "#FF4500"                 // Red
+    )
+
+Production Trend Color = 
+VAR Growth = [Production Growth %]
+RETURN
+    IF(
+        Growth > 0.05, "#006400",     // Green for >5% growth
+        IF(
+            Growth > -0.05, "#FFD700", // Gold for stable
+            "#FF4500"                  // Red for decline
+        )
+    )
+
+// =====================================================
+// ADVANCED ANALYTICS
+// =====================================================
+
+State Performance Score = 
+VAR ProductionScore = DIVIDE([State Production Rank], DISTINCTCOUNT(dim_states[State_Name]), 0)
+VAR YieldScore = DIVIDE([Average Yield], MAXX(ALL(dim_states), [Average Yield]), 0)
+VAR DiversityScore = DIVIDE([Crop Diversity Count], MAXX(ALL(dim_states), [Crop Diversity Count]), 0)
+RETURN
+    (ProductionScore + YieldScore + DiversityScore) / 3
+
+Seasonal Balance Index = 
+VAR KharifShare = DIVIDE([Kharif Season Production], [Total Production], 0)
+VAR RabiShare = DIVIDE([Rabi Season Production], [Total Production], 0)
+VAR SummerShare = DIVIDE([Summer Season Production], [Total Production], 0)
+VAR Variance = 
+    POWER(KharifShare - 0.33, 2) + 
+    POWER(RabiShare - 0.33, 2) + 
+    POWER(SummerShare - 0.33, 2)
+RETURN
+    1 - SQRT(Variance)
+
+// =====================================================
+// TOOLTIPS AND INSIGHTS
+// =====================================================
+
+Quick Insights = 
+VAR TopState = TOPN(1, ALL(dim_states[State_Name]), [Total Production])
+VAR TopCrop = TOPN(1, ALL(dim_crops[Crop]), [Total Production])
+VAR AvgYield = ROUND([Average Yield], 2)
+RETURN
+    "Top State: " & TopState & 
+    " | Top Crop: " & TopCrop & 
+    " | Avg Yield: " & AvgYield & " tonnes/ha"
+
+Performance Summary = 
+VAR ProdGrowth = ROUND([Production Growth %] * 100, 1)
+VAR AreaGrowth = ROUND([Area Growth %] * 100, 1)
+VAR YieldClass = [Yield Classification]
+RETURN
+    "Production: " & IF(ProdGrowth > 0, "+", "") & ProdGrowth & "% | " &
+    "Area: " & IF(AreaGrowth > 0, "+", "") & AreaGrowth & "% | " &
+    "Yield: " & YieldClass
+
+// =====================================================
+// END OF DAX MEASURES
+// =====================================================
+
+/* 
+USAGE INSTRUCTIONS:
+1. In Power BI, go to Model view
+2. Right-click in the field list and create "New Table"
+3. Name it "Measures"
+4. For each measure above:
+   - Click "New Measure" 
+   - Copy and paste the DAX code
+   - Press Enter to create the measure
+5. Organize measures into display folders for better navigation
+6. Use these measures in your visualizations
+
+DISPLAY FOLDER SUGGESTIONS:
+- Basic Metrics: Total Production, Total Area, Average Yield
+- Growth & Trends: Production Growth %, Area Growth %, Yield Efficiency
+- Rankings: State Production Rank, Crop Production Rank
+- Seasonal: Kharif/Rabi/Summer Production measures
+- Advanced: Performance Score, Balance Index
+- Alerts: Yield Alert, Production Decline Alert
+*/

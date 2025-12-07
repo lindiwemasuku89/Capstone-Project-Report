@@ -1,0 +1,92 @@
+{
+  "data_model": {
+    "type": "Star Schema",
+    "created": "2025-12-07T19:15:52.983004",
+    "description": "Agriculture data model optimized for Power BI",
+    "dimensions": {
+      "states": {
+        "rows": 10,
+        "columns": [
+          "State_ID",
+          "State_Name"
+        ]
+      },
+      "crops": {
+        "rows": 10,
+        "columns": [
+          "Crop_ID",
+          "Crop"
+        ]
+      },
+      "seasons": {
+        "rows": 3,
+        "columns": [
+          "Season_ID",
+          "Season"
+        ]
+      },
+      "dates": {
+        "rows": 6,
+        "columns": [
+          "Date_ID",
+          "Year",
+          "Decade",
+          "IsCurrentYear"
+        ]
+      }
+    },
+    "fact_table": {
+      "name": "fact_agriculture",
+      "rows": 1000,
+      "columns": [
+        "State_ID",
+        "Crop_ID",
+        "Season_ID",
+        "Date_ID",
+        "District_Name",
+        "Area_Hectares",
+        "Production_Tonnes",
+        "Yield_Per_Hectare",
+        "Temperature_Avg",
+        "Rainfall_MM"
+      ]
+    },
+    "summary_tables": {
+      "state_summary": {
+        "rows": 10,
+        "columns": [
+          "State_Name",
+          "Total_Area",
+          "Avg_Area",
+          "Total_Production",
+          "Avg_Production",
+          "Avg_Yield",
+          "Yield_StdDev",
+          "Crop_Diversity"
+        ]
+      },
+      "crop_summary": {
+        "rows": 10,
+        "columns": [
+          "Crop",
+          "Total_Area",
+          "Avg_Area",
+          "Total_Production",
+          "Avg_Production",
+          "Avg_Yield",
+          "Max_Yield",
+          "States_Count"
+        ]
+      },
+      "yearly_trends": {
+        "rows": 6,
+        "columns": [
+          "Crop_Year",
+          "Area_Hectares",
+          "Production_Tonnes",
+          "Yield_Per_Hectare"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+# Loading Data Section - India Dataset
+# This section loads the India dataset and displays initial data exploration
+
+print("=== LOADING DATA SECTION ===\n")
+
+# Load the India dataset using our predefined function
+print("📂 LOADING INDIA DATASET...")
+df = load_india_data()
+
+# Check if data was loaded successfully
+if df is not None:
+    print("✅ DATA LOADED SUCCESSFULLY!\n")
+    
+    # Display basic dataset information
+    print("📊 DATASET OVERVIEW:")
+    print(f"- Shape: {df.shape[0]} rows × {df.shape[1]} columns")
+    print(f"- Size: {df.size:,} total data points")
+    
+    # Display first few rows
+    print(f"\n📋 FIRST 5 ROWS OF THE DATASET:")
+    print("=" * 80)
+    print(df.head())
+    
+    # Display last few rows
+    print(f"\n📋 LAST 5 ROWS OF THE DATASET:")
+    print("=" * 80)
+    print(df.tail())
+    
+    # Display column names and their data types
+    print(f"\n🏷️ COLUMN INFORMATION:")
+    print("=" * 80)
+    for i, (col, dtype) in enumerate(zip(df.columns, df.dtypes), 1):
+        sample_value = df[col].dropna().iloc[0] if not df[col].dropna().empty else "N/A"
+        print(f"{i:2d}. {col:<25} | Type: {str(dtype):<12} | Sample: {sample_value}")
+    
+    # Display basic statistics
+    print(f"\n📈 BASIC STATISTICS:")
+    print("=" * 80)
+    
+    # Numerical columns statistics
+    numerical_cols = df.select_dtypes(include=[np.number]).columns
+    if len(numerical_cols) > 0:
+        print("NUMERICAL COLUMNS:")
+        print(df[numerical_cols].describe())
+    
+    # Categorical columns information
+    categorical_cols = df.select_dtypes(include=['object']).columns
+    if len(categorical_cols) > 0:
+        print(f"\n📝 CATEGORICAL COLUMNS SUMMARY:")
+        for col in categorical_cols:
+            unique_count = df[col].nunique()
+            print(f"- {col}: {unique_count} unique values")
+            if unique_count <= 10:  # Show values if not too many
+                print(f"  Values: {list(df[col].unique())}")
+    
+    # Memory usage information
+    print(f"\n💾 MEMORY USAGE:")
+    memory_usage = df.memory_usage(deep=True)
+    total_memory = memory_usage.sum() / (1024 ** 2)  # Convert to MB
+    print(f"- Total Memory Usage: {total_memory:.2f} MB")
+    print(f"- Average per column: {total_memory/len(df.columns):.2f} MB")
+    
+    # Check for duplicate rows
+    duplicate_count = df.duplicated().sum()
+    print(f"\n🔍 DATA QUALITY CHECKS:")
+    print(f"- Duplicate rows: {duplicate_count}")
+    print(f"- Unique rows: {len(df) - duplicate_count}")
+    
+    # Store the loaded dataframe for use in subsequent sections
+    globals()['india_df'] = df
+    print(f"\n✅ Dataset stored in variable 'india_df' for further analysis")
+    
+else:
+    print("❌ FAILED TO LOAD DATASET")
+    print("\n🔧 TROUBLESHOOTING STEPS:")
+    print("1. Ensure the India dataset CSV file is in your working directory")
+    print("2. Check that the file name matches one of these patterns:")
+    print("   - india_data.csv")
+    print("   - Data/india_data.csv") 
+    print("   - ../india-dataset/data.csv")
+    print("3. Verify the file is not corrupted and is in proper CSV format")
+    print("4. Check file permissions")
+    
+    # Provide alternative loading methods
+    print(f"\n📁 ALTERNATIVE LOADING METHODS:")
+    print("# If your file has a different name or location, use:")
+    print("# df = pd.read_csv('your_file_path_here.csv')")
+    print("# For example:")
+    print("# df = pd.read_csv('C:/Users/YourName/Documents/india_dataset.csv')")
+
+print("\n" + "="*80)
+print("DATA LOADING SECTION COMPLETE")
+print("="*80)

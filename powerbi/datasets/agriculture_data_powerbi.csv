@@ -1,0 +1,1001 @@
+﻿State_Name,District_Name,Crop_Year,Season,Crop,Area_Hectares,Production_Tonnes,Yield_Per_Hectare,Temperature_Avg,Rainfall_MM
+Gujarat,District_1,2018,Summer,Sugarcane,4720.79,908.28,0.192,23.1,255.1
+Haryana,District_2,2021,Kharif,Rice,196.35,1638.2,8.343,21.6,62.6
+Tamil Nadu,District_3,2020,Summer,Cotton,602.79,753.41,1.25,21.3,185.2
+West Bengal,District_4,2021,Kharif,Mustard,1378.26,4865.56,3.53,21.6,439.6
+Gujarat,District_5,2021,Rabi,Cotton,6648.62,40057.61,6.025,33.2,286.6
+Madhya Pradesh,District_6,2021,Kharif,Wheat,1608.57,8555.44,5.319,21.4,395.2
+Punjab,District_7,2021,Kharif,Pulses,1772.78,14095.16,7.951,22.1,363.8
+Gujarat,District_8,2022,Summer,Maize,620.56,10194.39,16.428,18.8,97.6
+Tamil Nadu,District_9,2022,Summer,Sugarcane,1936.2,2980.43,1.539,26.5,239.5
+West Bengal,District_10,2019,Rabi,Mustard,1218.42,15138.72,12.425,24.7,37.3
+Haryana,District_11,2018,Kharif,Cotton,223.98,9113.81,13.386217961980568,19.3,85.7
+Tamil Nadu,District_12,2021,Kharif,Soybean,2423.42,25826.82,10.657,20.5,452.2
+Tamil Nadu,District_13,2019,Kharif,Wheat,2894.0,1496.19,0.517,32.7,109.1
+Punjab,District_14,2018,Rabi,Soybean,2448.83,219.83,0.09,25.2,33.3
+Karnataka,District_15,2023,Rabi,Sugarcane,1133.8,14298.02,12.611,25.5,743.2
+West Bengal,District_16,2020,Rabi,Mustard,421.5,5037.44,11.951,25.5,232.7
+Maharashtra,District_17,2022,Rabi,Wheat,108.94,1912.05,17.551,32.0,273.6
+Tamil Nadu,District_18,2023,Rabi,Mustard,1283.12,2079.27,1.62,19.8,67.7
+Karnataka,District_19,2018,Summer,Maize,3235.51,137589.44,11.547757512842603,23.0,186.3
+Maharashtra,District_20,2023,Kharif,Barley,2967.67,1137.64,0.383,24.2,182.4
+West Bengal,District_21,2020,Kharif,Wheat,2480.15,828.85,0.334,16.4,76.9
+Uttar Pradesh,District_22,2018,Kharif,Soybean,1018.2,3387.77,3.327,20.4,129.6
+Madhya Pradesh,District_23,2023,Kharif,Sugarcane,3253.43,17513.66,5.383,30.2,44.7
+Karnataka,District_24,2022,Kharif,Pulses,2763.25,90907.97,7.284258523084201,28.8,112.5
+Rajasthan,District_25,2022,Kharif,Maize,718.64,7990.81,11.119,29.7,323.5
+Uttar Pradesh,District_26,2019,Kharif,Barley,2157.27,443.36,0.206,22.1,81.7
+Madhya Pradesh,District_27,2023,Kharif,Pulses,641.65,57313.78,7.740117803855475,22.7,682.6
+Punjab,District_28,2021,Summer,Rice,1881.88,2895.16,1.538,16.1,47.0
+Gujarat,District_29,2023,Kharif,Maize,299.13,848.47,2.836,29.7,120.5
+Haryana,District_30,2018,Summer,Sugarcane,323.04,590.47,1.828,30.5,87.8
+Rajasthan,District_31,2018,Rabi,Cotton,3159.62,10451.42,3.308,30.4,128.5
+Punjab,District_32,2023,Kharif,Wheat,2800.52,4265.2,1.523,33.0,444.6
+West Bengal,District_33,2020,Rabi,Mustard,2066.5,5002.1,2.421,27.1,67.5
+Punjab,District_34,2022,Rabi,Sugarcane,1197.47,20532.3,17.146,32.8,103.4
+Gujarat,District_35,2018,Rabi,Wheat,100.36,894.95,8.917,24.0,250.5
+West Bengal,District_36,2022,Summer,Pulses,1017.52,23138.01,8.148411554087353,16.2,159.9
+Rajasthan,District_37,2018,Rabi,Mustard,1727.07,1368.22,0.792,29.3,170.7
+Gujarat,District_38,2019,Rabi,Groundnut,642.44,76573.86,6.16804107733952,16.0,68.6
+Maharashtra,District_39,2021,Rabi,Soybean,537.81,7318.12,13.607,25.9,140.2
+Haryana,District_40,2018,Kharif,Rice,4649.06,749.68,0.161,29.8,367.0
+Rajasthan,District_41,2022,Kharif,Maize,1032.47,142.86,0.138,26.6,41.0
+Maharashtra,District_42,2019,Summer,Sugarcane,1728.13,10030.51,5.804,36.4,85.0
+Madhya Pradesh,District_43,2018,Summer,Rice,2378.28,1700.59,0.715,15.2,34.7
+Rajasthan,District_44,2020,Kharif,Cotton,402.85,2360.55,5.86,24.6,228.1
+Madhya Pradesh,District_45,2021,Summer,Wheat,1330.36,9407.8,7.072,25.1,395.6
+West Bengal,District_46,2018,Kharif,Wheat,4103.7,13570.05,3.307,18.3,128.2
+Maharashtra,District_47,2019,Rabi,Sugarcane,6763.01,18686.67,2.763,19.2,66.4
+Haryana,District_48,2020,Rabi,Barley,1141.32,511.7,0.448,20.8,68.0
+Gujarat,District_49,2023,Summer,Barley,864.42,25307.15,7.731596203699452,19.5,117.0
+Tamil Nadu,District_50,2019,Kharif,Groundnut,1435.15,1250.67,0.871,24.5,116.7
+Punjab,District_1,2019,Kharif,Soybean,1399.17,101.05,0.072,22.0,307.8
+Uttar Pradesh,District_2,2020,Summer,Mustard,4388.57,508.94,0.116,26.6,86.9
+Haryana,District_3,2019,Kharif,Cotton,404.89,4134.15,10.211,28.2,210.2
+Maharashtra,District_4,2020,Rabi,Rice,828.92,686.62,0.828,27.9,116.2
+Tamil Nadu,District_5,2018,Summer,Barley,358.83,2612.16,7.28,22.9,81.8
+Haryana,District_6,2020,Summer,Groundnut,398.58,4951.17,12.422,26.4,113.9
+Maharashtra,District_7,2020,Kharif,Groundnut,1598.11,2270.88,1.421,30.2,194.3
+Karnataka,District_8,2021,Summer,Sugarcane,2464.78,1420.08,0.576,27.2,308.6
+Karnataka,District_9,2020,Kharif,Cotton,572.84,456.67,0.797,34.3,121.3
+Madhya Pradesh,District_10,2020,Kharif,Pulses,2373.44,3080.71,1.298,29.9,56.6
+Haryana,District_11,2023,Kharif,Mustard,3332.84,134.63,0.04,33.6,330.2
+Karnataka,District_12,2018,Kharif,Soybean,7590.9,1065.29,0.14,12.5,72.3
+Maharashtra,District_13,2021,Kharif,Maize,1175.85,741.24,0.63,25.5,182.8
+Madhya Pradesh,District_14,2023,Summer,Sugarcane,578.38,2081.69,3.599,23.4,145.5
+Maharashtra,District_15,2022,Rabi,Mustard,402.43,2164.63,5.379,24.4,130.7
+Madhya Pradesh,District_16,2018,Rabi,Maize,364.38,12580.9,7.095192243125322,21.0,100.5
+Haryana,District_17,2018,Summer,Maize,3826.79,32055.24,8.377,27.0,243.7
+Tamil Nadu,District_18,2022,Summer,Cotton,241.03,557.43,2.313,16.0,8.5
+Gujarat,District_19,2020,Rabi,Cotton,3706.15,59233.88,15.983,27.0,368.4
+Rajasthan,District_20,2023,Rabi,Rice,460.15,926.17,2.013,21.1,71.5
+Tamil Nadu,District_21,2019,Rabi,Groundnut,552.69,3861.42,6.987,22.5,205.7
+West Bengal,District_22,2021,Rabi,Mustard,942.41,6414.36,6.806,27.2,197.2
+Maharashtra,District_23,2019,Rabi,Sugarcane,542.59,116643.1,9.553287498086021,25.4,411.6
+West Bengal,District_24,2022,Kharif,Wheat,2784.93,1321.57,0.475,30.3,173.9
+Tamil Nadu,District_25,2018,Summer,Sugarcane,6723.36,201.32,0.03,20.2,76.5
+Madhya Pradesh,District_26,2018,Kharif,Rice,568.25,27877.33,14.084375478722649,24.6,41.1
+Rajasthan,District_27,2021,Rabi,Soybean,711.78,854.01,1.2,29.4,112.3
+Rajasthan,District_28,2018,Rabi,Groundnut,931.39,1733.01,1.861,26.8,31.0
+Uttar Pradesh,District_29,2018,Rabi,Wheat,1883.82,557.45,0.296,27.1,89.8
+Rajasthan,District_30,2021,Kharif,Barley,940.6,1740.53,1.85,30.5,117.4
+Gujarat,District_31,2023,Kharif,Soybean,4390.76,845.06,0.192,23.0,85.5
+Rajasthan,District_32,2023,Rabi,Cotton,3451.71,8222.77,2.382,21.9,153.5
+Tamil Nadu,District_33,2021,Kharif,Maize,335.14,3365.01,10.041,27.9,122.9
+Uttar Pradesh,District_34,2022,Kharif,Barley,1846.35,1073.22,0.581,24.3,114.2
+Tamil Nadu,District_35,2018,Rabi,Sugarcane,5015.75,13277.26,2.647,30.6,21.3
+Tamil Nadu,District_36,2018,Kharif,Sugarcane,668.62,4369.9,6.536,26.8,52.7
+Punjab,District_37,2022,Summer,Cotton,817.08,186.97,0.229,21.9,248.2
+Uttar Pradesh,District_38,2023,Summer,Rice,646.75,11843.74,18.313,26.7,282.4
+Tamil Nadu,District_39,2020,Summer,Mustard,660.45,3933.57,5.956,20.5,34.1
+Punjab,District_40,2020,Summer,Barley,206.76,24006.95,6.04480316753958,29.7,77.3
+Punjab,District_41,2020,Rabi,Barley,290.52,3589.89,12.357,18.0,349.9
+Uttar Pradesh,District_42,2023,Rabi,Pulses,1184.97,909.08,0.767,31.1,83.6
+West Bengal,District_43,2023,Rabi,Soybean,4982.06,2194.17,0.44,26.6,135.7
+Madhya Pradesh,District_44,2022,Summer,Groundnut,593.86,9955.49,16.764,24.2,470.3
+Gujarat,District_45,2018,Summer,Soybean,576.65,938.14,1.627,28.8,111.1
+Madhya Pradesh,District_46,2022,Kharif,Mustard,6012.05,1540.03,0.256,27.6,99.1
+Rajasthan,District_47,2022,Kharif,Sugarcane,362.04,2137.66,5.904,31.7,130.9
+Gujarat,District_48,2023,Summer,Sugarcane,208.25,531.63,2.553,31.6,653.8
+Rajasthan,District_49,2020,Summer,Sugarcane,478.9,958.64,2.002,26.8,212.1
+Tamil Nadu,District_50,2019,Summer,Pulses,565.22,3861.56,6.832,20.6,150.7
+Maharashtra,District_1,2018,Summer,Sugarcane,191.05,18100.89,12.202679239473955,22.3,97.6
+Uttar Pradesh,District_2,2023,Kharif,Mustard,964.84,4796.88,4.972,24.6,228.4
+Gujarat,District_3,2020,Summer,Cotton,2831.17,2782.79,0.983,30.4,251.6
+Gujarat,District_4,2019,Kharif,Groundnut,303.09,856.71,2.827,22.7,62.9
+Tamil Nadu,District_5,2019,Summer,Mustard,1197.01,15409.52,12.873,23.1,257.1
+West Bengal,District_6,2023,Summer,Groundnut,1629.35,5711.62,3.505,34.2,131.5
+Punjab,District_7,2021,Summer,Mustard,1008.9,1032.67,1.024,24.5,151.4
+Tamil Nadu,District_8,2018,Kharif,Sugarcane,1320.4,11475.54,8.691,21.8,73.2
+Karnataka,District_9,2019,Kharif,Cotton,1335.86,6900.61,5.166,28.9,107.8
+Punjab,District_10,2023,Rabi,Barley,486.52,879.81,1.808,24.7,65.1
+Uttar Pradesh,District_11,2023,Summer,Soybean,4907.81,2560.44,0.522,18.1,62.6
+Punjab,District_12,2020,Rabi,Maize,3819.05,1423.45,0.373,30.2,200.7
+West Bengal,District_13,2021,Rabi,Cotton,3604.4,154864.67,11.872830044131277,21.3,111.7
+Punjab,District_14,2018,Kharif,Barley,3022.0,6618.46,2.19,25.2,52.5
+Uttar Pradesh,District_15,2022,Kharif,Rice,227.02,3944.76,17.376,24.7,847.0
+West Bengal,District_16,2020,Rabi,Mustard,2768.5,6057.15,2.188,26.2,60.4
+Madhya Pradesh,District_17,2019,Summer,Rice,2112.45,23593.91,11.169,14.0,355.6
+Gujarat,District_18,2019,Kharif,Barley,235.92,2630.5,11.15,23.3,45.6
+Gujarat,District_19,2020,Summer,Cotton,884.56,1230.45,1.391,30.6,213.8
+Rajasthan,District_20,2023,Summer,Mustard,1446.34,10576.87,7.313,31.3,121.5
+Madhya Pradesh,District_21,2019,Rabi,Maize,5792.49,2292.92,0.396,20.0,89.7
+Madhya Pradesh,District_22,2021,Rabi,Sugarcane,2263.63,598.94,0.265,29.6,173.7
+Punjab,District_23,2018,Rabi,Mustard,461.94,447.18,0.968,21.2,156.0
+Gujarat,District_24,2021,Rabi,Mustard,5975.29,29553.13,4.946,23.1,77.5
+Uttar Pradesh,District_25,2019,Kharif,Cotton,1145.71,3631.74,3.17,23.4,74.7
+Haryana,District_26,2022,Kharif,Cotton,849.08,1231.08,1.45,25.5,42.1
+Haryana,District_27,2018,Rabi,Barley,790.67,2097.49,2.653,30.0,189.5
+West Bengal,District_28,2018,Kharif,Wheat,216.25,10008.27,5.957541986633577,26.3,54.4
+Gujarat,District_29,2020,Rabi,Mustard,982.63,1919.64,1.954,24.4,148.9
+Gujarat,District_30,2020,Summer,Soybean,1803.5,338.96,0.188,29.8,238.4
+Haryana,District_31,2022,Summer,Mustard,745.92,4859.84,6.515,21.0,175.3
+Gujarat,District_32,2023,Summer,Barley,1669.79,18260.98,10.936,24.6,83.2
+Punjab,District_33,2018,Rabi,Groundnut,462.02,16517.84,14.225724049058,30.0,307.1
+Karnataka,District_34,2022,Summer,Rice,952.48,1288.21,1.352,27.6,107.1
+Maharashtra,District_35,2020,Kharif,Sugarcane,1504.99,20005.43,13.293,22.7,51.0
+Madhya Pradesh,District_36,2020,Summer,Wheat,1325.65,4102.8,3.095,17.4,118.3
+Rajasthan,District_37,2018,Summer,Maize,220.2,19181.87,10.684722021568195,26.6,237.3
+West Bengal,District_38,2021,Summer,Maize,706.97,7048.22,9.97,17.1,86.5
+Karnataka,District_39,2019,Kharif,Maize,5869.14,304.18,0.052,23.9,299.6
+Haryana,District_40,2020,Rabi,Cotton,670.19,40950.05,8.637255211356843,30.9,80.1
+Madhya Pradesh,District_41,2023,Kharif,Maize,1114.11,3221.74,2.892,28.0,89.4
+Gujarat,District_42,2023,Rabi,Sugarcane,1005.5,7081.14,7.042,14.9,64.3
+Rajasthan,District_43,2020,Rabi,Rice,5261.86,397.0,0.075,26.0,256.5
+Gujarat,District_44,2021,Summer,Maize,3985.3,6361.31,1.596,23.4,142.2
+Uttar Pradesh,District_45,2021,Rabi,Mustard,2459.05,15590.1,6.34,18.6,67.8
+Uttar Pradesh,District_46,2022,Kharif,Mustard,414.37,54338.08,12.565385834953066,26.7,108.1
+Rajasthan,District_47,2023,Kharif,Cotton,1570.55,24357.61,15.509,22.5,12.7
+Rajasthan,District_48,2022,Rabi,Sugarcane,1935.15,6845.43,3.537,22.6,276.5
+Haryana,District_49,2023,Summer,Rice,545.33,293.96,0.539,25.6,129.5
+Rajasthan,District_50,2019,Summer,Wheat,459.2,3635.16,7.916,21.9,21.7
+Punjab,District_1,2019,Kharif,Barley,6033.09,1225.66,0.203,25.5,46.3
+Gujarat,District_2,2018,Summer,Rice,811.75,4240.63,5.224,22.0,105.9
+Karnataka,District_3,2022,Rabi,Barley,5513.62,480.83,0.087,22.3,51.9
+Tamil Nadu,District_4,2020,Rabi,Groundnut,2972.31,2174.93,0.732,30.0,280.0
+Rajasthan,District_5,2022,Kharif,Barley,1648.92,1372.28,0.832,30.5,207.4
+West Bengal,District_6,2020,Rabi,Soybean,1724.22,1309.96,0.76,16.5,197.9
+Uttar Pradesh,District_7,2021,Kharif,Mustard,270.31,1329.62,4.919,28.7,18.5
+Punjab,District_8,2022,Rabi,Sugarcane,1348.54,2431.39,1.803,32.0,97.5
+Madhya Pradesh,District_9,2021,Kharif,Pulses,4523.41,4579.26,1.012,32.8,84.9
+Tamil Nadu,District_10,2019,Summer,Cotton,2167.52,70.26,0.032,27.6,69.2
+Karnataka,District_11,2019,Rabi,Soybean,1279.64,84.38,0.066,19.7,106.5
+Tamil Nadu,District_12,2018,Rabi,Barley,6075.0,1793.57,0.295,28.1,60.3
+Rajasthan,District_13,2022,Kharif,Maize,911.38,2215.75,2.431,20.7,176.3
+Haryana,District_14,2021,Kharif,Sugarcane,590.19,3958.68,6.707,23.3,274.0
+Uttar Pradesh,District_15,2020,Rabi,Soybean,1279.0,1000.74,0.782,26.9,255.8
+Uttar Pradesh,District_16,2019,Kharif,Cotton,2360.12,3023.58,1.281,21.0,132.9
+Madhya Pradesh,District_17,2019,Rabi,Mustard,196.8,3603.95,18.313,19.3,734.6
+Haryana,District_18,2020,Summer,Sugarcane,1458.07,990.45,0.679,27.3,369.4
+Gujarat,District_19,2021,Kharif,Cotton,2465.98,13632.12,5.528,34.3,136.8
+Maharashtra,District_20,2021,Rabi,Groundnut,837.45,3887.34,4.642,31.2,100.9
+Punjab,District_21,2022,Summer,Groundnut,3317.49,6771.25,2.041,28.5,432.9
+Uttar Pradesh,District_22,2022,Summer,Cotton,2082.21,3305.25,1.587,29.9,332.3
+West Bengal,District_23,2023,Rabi,Soybean,9333.67,69948.16,7.494,28.2,48.0
+Uttar Pradesh,District_24,2023,Kharif,Sugarcane,517.7,7292.46,14.086,27.2,353.8
+Tamil Nadu,District_25,2018,Rabi,Soybean,2516.72,1433.69,0.57,29.5,131.2
+Uttar Pradesh,District_26,2019,Summer,Wheat,396.5,10213.34,7.5736545840163405,18.2,74.5
+Uttar Pradesh,District_27,2022,Rabi,Barley,218.03,255.59,1.172,26.0,30.5
+Maharashtra,District_28,2021,Kharif,Wheat,143.23,3566.72,11.935098370463205,24.6,119.7
+Maharashtra,District_29,2020,Summer,Groundnut,1878.68,4811.39,2.561,25.4,147.0
+Karnataka,District_30,2021,Rabi,Mustard,1318.5,3628.34,2.752,22.7,528.4
+Gujarat,District_31,2019,Kharif,Rice,679.22,1806.83,2.66,27.6,319.2
+West Bengal,District_32,2023,Summer,Barley,186.14,653.01,3.508,20.9,93.1
+Uttar Pradesh,District_33,2021,Kharif,Groundnut,549.83,912.31,1.659,22.3,202.6
+Uttar Pradesh,District_34,2018,Summer,Soybean,1101.13,3474.18,3.155,21.7,287.4
+Punjab,District_35,2019,Rabi,Soybean,2423.99,561.0,0.231,29.3,159.0
+Maharashtra,District_36,2023,Kharif,Soybean,1078.65,42414.75,5.397112075722472,24.9,92.8
+West Bengal,District_37,2020,Summer,Mustard,1411.01,56.75,0.04,22.7,97.0
+Madhya Pradesh,District_38,2023,Kharif,Wheat,752.85,1835.08,2.438,23.1,202.0
+Karnataka,District_39,2018,Kharif,Rice,6305.79,3517.78,0.558,25.0,206.5
+Gujarat,District_40,2019,Rabi,Soybean,396.13,6381.33,16.109,33.1,117.4
+Haryana,District_41,2020,Kharif,Pulses,544.99,754.54,1.385,18.8,18.3
+Gujarat,District_42,2018,Summer,Barley,670.24,16341.16,13.39408037609272,28.4,52.9
+Tamil Nadu,District_43,2023,Summer,Sugarcane,1886.93,368.43,0.195,27.4,243.7
+Uttar Pradesh,District_44,2018,Summer,Pulses,388.05,1275.13,3.286,20.6,27.0
+Karnataka,District_45,2019,Summer,Rice,1256.04,7563.74,6.022,32.3,382.7
+Tamil Nadu,District_46,2022,Rabi,Mustard,1293.25,14189.86,10.972,27.7,340.0
+West Bengal,District_47,2018,Kharif,Rice,547.65,362.85,0.663,22.5,153.4
+Haryana,District_48,2018,Rabi,Sugarcane,1525.35,157558.99,9.481708470213185,15.7,239.5
+Maharashtra,District_49,2023,Kharif,Barley,400.29,775.7,1.938,26.1,226.6
+Karnataka,District_50,2023,Kharif,Sugarcane,358.86,416.43,1.16,24.8,135.2
+Karnataka,District_1,2020,Kharif,Cotton,1211.49,6336.44,5.23,19.8,49.4
+Uttar Pradesh,District_2,2023,Rabi,Barley,208.56,1767.92,8.477,19.8,321.8
+Rajasthan,District_3,2021,Kharif,Rice,128.41,1416.47,11.031,29.3,457.5
+Karnataka,District_4,2019,Rabi,Soybean,1868.39,7284.22,3.899,15.2,56.4
+Punjab,District_5,2019,Summer,Rice,3130.57,301.59,0.096,26.6,48.0
+Haryana,District_6,2022,Summer,Rice,687.59,232.01,0.337,24.1,133.0
+Haryana,District_7,2022,Kharif,Barley,562.24,1216.66,2.164,27.5,89.9
+Punjab,District_8,2019,Rabi,Cotton,2997.5,15015.72,5.009,23.5,166.7
+Madhya Pradesh,District_9,2022,Summer,Rice,348.79,1298.44,3.723,26.5,390.1
+Punjab,District_10,2020,Rabi,Pulses,280.52,32818.09,11.366929143579418,21.3,24.6
+Punjab,District_11,2023,Rabi,Groundnut,2225.28,18061.22,8.116,24.8,525.9
+Haryana,District_12,2019,Kharif,Maize,1106.59,4557.0,4.118,27.4,107.2
+Gujarat,District_13,2022,Summer,Maize,3180.76,4962.11,1.56,25.8,223.5
+Haryana,District_14,2019,Kharif,Rice,128.99,4550.55,7.212378198066837,26.9,243.5
+Rajasthan,District_15,2021,Kharif,Pulses,270.24,3787.94,14.017,20.4,267.3
+Uttar Pradesh,District_16,2018,Summer,Soybean,1112.46,1720.96,1.547,22.0,155.9
+Tamil Nadu,District_17,2023,Summer,Mustard,1665.16,2048.2,1.23,22.1,188.0
+Gujarat,District_18,2019,Rabi,Mustard,2558.04,598.88,0.234,23.6,187.0
+Maharashtra,District_19,2018,Summer,Barley,1306.12,108.3,0.083,31.8,89.6
+Tamil Nadu,District_20,2022,Rabi,Maize,1292.92,15616.85,12.079,23.2,36.4
+Uttar Pradesh,District_21,2018,Rabi,Rice,742.93,3773.99,5.08,19.3,56.0
+Rajasthan,District_22,2023,Rabi,Mustard,5382.48,3008.86,0.559,27.7,136.5
+Rajasthan,District_23,2019,Summer,Rice,363.94,5419.04,14.89,31.7,79.1
+Maharashtra,District_24,2021,Kharif,Barley,1570.3,860.41,0.548,18.7,79.2
+Gujarat,District_25,2022,Rabi,Maize,408.38,664.08,1.626,34.9,626.0
+Madhya Pradesh,District_26,2019,Kharif,Sugarcane,1872.03,1947.83,1.04,27.1,295.0
+Punjab,District_27,2023,Kharif,Groundnut,388.77,23205.57,11.770737126584478,30.2,121.3
+Gujarat,District_28,2022,Summer,Groundnut,2307.26,516.4,0.224,32.3,254.1
+Madhya Pradesh,District_29,2020,Kharif,Mustard,1226.73,57.94,0.047,29.9,106.0
+Rajasthan,District_30,2018,Kharif,Groundnut,6276.95,1363.62,0.217,24.4,162.2
+Haryana,District_31,2023,Summer,Sugarcane,827.97,16548.49,19.987,31.1,211.3
+Uttar Pradesh,District_32,2020,Rabi,Rice,1677.34,221.67,0.132,26.3,106.3
+Maharashtra,District_33,2019,Kharif,Barley,502.88,507.54,1.009,30.5,85.8
+Uttar Pradesh,District_34,2021,Summer,Sugarcane,822.3,4426.3,5.383,31.0,395.1
+West Bengal,District_35,2022,Kharif,Barley,1218.96,140766.89,12.722402758932766,19.5,242.6
+West Bengal,District_36,2018,Kharif,Barley,238.12,388.65,1.632,29.0,24.4
+Gujarat,District_37,2022,Rabi,Maize,265.7,366.72,1.38,24.1,87.0
+Rajasthan,District_38,2019,Kharif,Rice,1997.91,4954.48,2.48,25.7,79.4
+Rajasthan,District_39,2022,Summer,Pulses,947.58,18160.64,19.165,25.6,90.3
+Punjab,District_40,2018,Kharif,Groundnut,606.12,1168.94,1.929,25.4,295.9
+Punjab,District_41,2019,Rabi,Pulses,524.8,261.89,0.499,32.6,150.7
+Punjab,District_42,2022,Rabi,Maize,545.4,5713.71,10.476,18.2,48.8
+Haryana,District_43,2021,Summer,Barley,1227.27,7497.03,6.109,16.4,109.2
+Tamil Nadu,District_44,2023,Rabi,Mustard,1711.35,42958.19,9.732131868843988,15.3,228.9
+Karnataka,District_45,2019,Kharif,Groundnut,135.35,7985.8,11.177269240617942,30.3,124.5
+Tamil Nadu,District_46,2023,Rabi,Groundnut,4504.51,10322.68,2.292,21.1,88.6
+Uttar Pradesh,District_47,2019,Summer,Rice,4195.22,2011.79,0.48,25.7,193.4
+Tamil Nadu,District_48,2021,Rabi,Cotton,106.63,116105.73,9.563259238223985,24.4,541.6
+Haryana,District_49,2023,Rabi,Wheat,3248.43,1640.55,0.505,20.6,214.7
+Uttar Pradesh,District_50,2020,Rabi,Wheat,3150.19,1190.49,0.378,29.3,420.2
+Tamil Nadu,District_1,2018,Summer,Wheat,1097.12,44993.46,13.940913692578455,24.4,93.5
+Haryana,District_2,2020,Rabi,Cotton,299.71,326.57,1.09,23.8,147.4
+Karnataka,District_3,2022,Rabi,Rice,3026.7,186.59,0.062,26.2,145.1
+Tamil Nadu,District_4,2021,Kharif,Cotton,861.58,3566.48,4.139,28.6,163.2
+Haryana,District_5,2020,Summer,Wheat,1898.61,2973.2,1.566,20.2,211.1
+Punjab,District_6,2019,Rabi,Maize,10089.0,2117.87,0.21,29.4,71.2
+Rajasthan,District_7,2022,Summer,Sugarcane,1410.69,13238.63,9.385,32.2,249.1
+Punjab,District_8,2022,Rabi,Barley,438.39,763.33,1.741,17.9,40.4
+Rajasthan,District_9,2020,Rabi,Cotton,783.89,3282.14,4.187,26.4,51.0
+Maharashtra,District_10,2020,Rabi,Rice,497.98,1736.87,3.488,23.5,819.3
+Maharashtra,District_11,2021,Kharif,Rice,1691.7,783.03,0.463,28.5,98.7
+Maharashtra,District_12,2018,Kharif,Pulses,489.77,2716.88,5.547,18.9,266.0
+Karnataka,District_13,2020,Kharif,Sugarcane,683.45,10709.58,15.67,33.1,577.5
+Punjab,District_14,2020,Summer,Mustard,303.56,71743.47,9.978691805143193,17.0,23.3
+Rajasthan,District_15,2023,Summer,Groundnut,960.94,7109.08,7.398,23.8,365.4
+Haryana,District_16,2019,Kharif,Wheat,1308.65,68.98,0.053,27.2,249.4
+Uttar Pradesh,District_17,2023,Summer,Mustard,74.83,2815.2,13.41808709028819,21.6,551.3
+Haryana,District_18,2023,Rabi,Pulses,1421.65,3212.18,2.259,20.8,57.7
+Uttar Pradesh,District_19,2022,Rabi,Wheat,1047.64,12140.64,11.589,26.1,473.9
+West Bengal,District_20,2018,Rabi,Sugarcane,510.3,3933.23,7.708,25.4,82.1
+Haryana,District_21,2019,Kharif,Pulses,8338.42,19528.56,2.342,25.0,345.1
+Tamil Nadu,District_22,2021,Summer,Wheat,2859.71,5364.22,1.876,29.3,144.2
+Tamil Nadu,District_23,2021,Kharif,Sugarcane,366.35,30890.29,13.013520582702485,23.0,275.0
+Gujarat,District_24,2020,Summer,Soybean,2535.73,1543.61,0.609,26.6,154.3
+Punjab,District_25,2020,Rabi,Mustard,3806.62,3701.58,0.972,22.5,34.1
+Uttar Pradesh,District_26,2021,Kharif,Mustard,1251.4,10300.65,8.231,20.8,12.2
+Uttar Pradesh,District_27,2020,Summer,Groundnut,1574.1,1263.59,0.803,23.6,175.6
+Punjab,District_28,2018,Summer,Sugarcane,1538.17,911.4,0.593,22.5,120.2
+Karnataka,District_29,2023,Rabi,Cotton,136.21,1159.76,8.514,22.8,204.1
+Gujarat,District_30,2020,Kharif,Soybean,909.71,968.91,1.065,30.8,121.3
+Karnataka,District_31,2022,Kharif,Maize,863.58,6527.92,7.559,23.7,745.8
+Karnataka,District_32,2020,Kharif,Wheat,4583.21,190.15,0.041,21.7,178.5
+Karnataka,District_33,2019,Rabi,Soybean,1531.08,288.89,0.189,25.1,103.8
+Punjab,District_34,2018,Kharif,Sugarcane,814.35,48733.39,9.105048213483565,25.5,194.4
+Karnataka,District_35,2019,Rabi,Barley,1002.12,1004.61,1.002,19.1,105.3
+Tamil Nadu,District_36,2019,Rabi,Wheat,3051.49,4023.96,1.319,23.5,159.9
+Maharashtra,District_37,2022,Rabi,Rice,911.8,319.35,0.35,23.3,56.0
+West Bengal,District_38,2018,Summer,Mustard,545.56,3432.99,6.293,24.1,147.4
+Uttar Pradesh,District_39,2018,Kharif,Sugarcane,832.39,1013.83,1.218,28.6,101.3
+Uttar Pradesh,District_40,2018,Kharif,Rice,2809.32,285.82,0.102,25.7,60.4
+West Bengal,District_41,2018,Rabi,Groundnut,1801.12,22145.3,12.295,31.1,721.0
+Punjab,District_42,2018,Rabi,Pulses,1146.27,17568.25,15.326,24.9,62.4
+Haryana,District_43,2022,Kharif,Maize,1328.15,2537.58,1.911,33.9,149.2
+Punjab,District_44,2020,Rabi,Maize,626.57,13348.09,7.30084491857475,22.7,78.1
+Uttar Pradesh,District_45,2019,Kharif,Rice,903.3,51789.31,9.06082132559771,21.2,188.2
+Uttar Pradesh,District_46,2018,Summer,Mustard,564.93,9238.31,16.353,27.7,53.5
+West Bengal,District_47,2020,Rabi,Groundnut,816.66,6121.24,7.495,31.8,290.7
+Karnataka,District_48,2020,Kharif,Barley,4214.04,4017.54,0.953,18.1,756.7
+Punjab,District_49,2019,Rabi,Mustard,373.21,7897.06,13.262173757752201,24.0,75.8
+Rajasthan,District_50,2022,Kharif,Soybean,550.75,1726.97,3.136,21.9,392.9
+West Bengal,District_1,2021,Kharif,Maize,312.84,1968.54,6.292,25.7,109.3
+Tamil Nadu,District_2,2021,Rabi,Soybean,251.91,5862.53,7.276325358193923,25.1,495.0
+Uttar Pradesh,District_3,2020,Summer,Wheat,909.8,1464.4,1.61,31.7,854.7
+West Bengal,District_4,2023,Kharif,Cotton,591.34,1722.1,2.912,24.5,123.1
+Punjab,District_5,2023,Kharif,Sugarcane,6384.89,2981.79,0.467,31.9,44.0
+Uttar Pradesh,District_6,2019,Kharif,Groundnut,826.46,16745.94,10.244363458577492,23.4,316.9
+Haryana,District_7,2021,Summer,Mustard,3981.43,545.12,0.137,29.6,177.6
+West Bengal,District_8,2020,Summer,Maize,2887.1,9309.29,3.224,26.1,221.7
+Gujarat,District_9,2022,Rabi,Soybean,889.84,9776.09,10.986,33.6,113.1
+Uttar Pradesh,District_10,2021,Summer,Pulses,9046.52,9688.72,1.071,17.6,73.1
+Punjab,District_11,2020,Rabi,Wheat,1434.45,888.81,0.62,19.2,375.5
+Maharashtra,District_12,2020,Rabi,Sugarcane,4979.12,235.33,0.047,34.2,191.7
+Rajasthan,District_13,2018,Summer,Sugarcane,4431.96,6901.89,1.557,21.3,46.8
+Madhya Pradesh,District_14,2022,Rabi,Mustard,1660.12,3949.36,2.379,21.7,257.1
+Karnataka,District_15,2018,Summer,Groundnut,2324.2,13447.72,5.786,20.6,219.0
+Madhya Pradesh,District_16,2019,Rabi,Barley,2046.88,1042.31,0.509,30.7,114.4
+Punjab,District_17,2018,Summer,Pulses,349.23,9322.42,13.060967479607475,18.7,542.3
+Tamil Nadu,District_18,2018,Summer,Mustard,1161.29,14495.86,12.483,25.1,90.5
+Tamil Nadu,District_19,2021,Rabi,Soybean,3210.71,2583.85,0.805,23.7,129.6
+Maharashtra,District_20,2023,Kharif,Cotton,5045.17,5571.36,1.104,30.2,274.5
+Karnataka,District_21,2020,Rabi,Rice,533.45,5286.7,9.91,22.2,157.8
+Gujarat,District_22,2022,Summer,Barley,1860.93,869.39,0.467,27.1,49.0
+Maharashtra,District_23,2018,Kharif,Groundnut,1275.22,6612.02,5.185,19.1,171.9
+Madhya Pradesh,District_24,2022,Rabi,Wheat,974.7,33987.48,8.534774751283788,36.4,106.5
+Maharashtra,District_25,2023,Rabi,Barley,1565.57,3081.91,1.969,23.8,294.6
+Madhya Pradesh,District_26,2023,Rabi,Maize,1363.76,333.16,0.244,25.0,167.5
+Uttar Pradesh,District_27,2018,Kharif,Groundnut,1884.48,1063.33,0.564,33.3,160.1
+Tamil Nadu,District_28,2019,Summer,Cotton,4636.51,206.61,0.045,22.1,64.2
+Uttar Pradesh,District_29,2018,Rabi,Maize,2402.17,20648.37,8.596,33.3,123.5
+Rajasthan,District_30,2021,Rabi,Barley,1496.06,9378.34,6.269,22.9,322.5
+Karnataka,District_31,2020,Rabi,Rice,7077.14,1405.22,0.199,28.4,79.7
+Gujarat,District_32,2019,Rabi,Rice,3327.34,355.28,0.107,22.1,144.6
+Madhya Pradesh,District_33,2018,Rabi,Cotton,999.85,854.11,0.854,18.2,70.2
+Gujarat,District_34,2022,Summer,Sugarcane,324.69,1144.34,3.524,27.1,57.6
+Madhya Pradesh,District_35,2019,Summer,Pulses,408.37,3512.6,8.602,28.2,138.7
+Punjab,District_36,2019,Rabi,Wheat,2788.43,3339.71,1.198,18.4,170.6
+Maharashtra,District_37,2018,Kharif,Sugarcane,583.88,22295.67,11.422096370026974,23.5,731.5
+Rajasthan,District_38,2019,Summer,Rice,400.19,1054.55,2.635,31.0,103.1
+Tamil Nadu,District_39,2022,Kharif,Rice,513.84,310.36,0.604,28.0,142.6
+Madhya Pradesh,District_40,2023,Summer,Soybean,551.49,525.6,0.953,23.0,54.6
+Gujarat,District_41,2019,Rabi,Maize,2567.4,2879.76,1.122,22.0,242.2
+Rajasthan,District_42,2023,Summer,Barley,937.54,999.23,1.066,34.7,204.1
+Haryana,District_43,2022,Rabi,Wheat,278.0,1923.66,6.92,17.8,488.2
+Haryana,District_44,2018,Summer,Cotton,1131.21,1508.62,1.334,24.7,361.2
+Uttar Pradesh,District_45,2020,Rabi,Barley,1369.59,13165.53,9.613,17.7,196.6
+Tamil Nadu,District_46,2019,Rabi,Soybean,679.03,1235.9,1.82,31.6,101.9
+Punjab,District_47,2020,Rabi,Rice,3483.82,1692.54,0.486,25.0,174.8
+Gujarat,District_48,2022,Rabi,Cotton,719.86,8742.27,12.144,25.9,135.8
+Maharashtra,District_49,2019,Kharif,Rice,3322.05,1277.33,0.385,38.8,318.2
+Maharashtra,District_50,2023,Rabi,Wheat,1991.78,5624.11,2.824,22.0,287.4
+Gujarat,District_1,2021,Kharif,Maize,2770.01,4901.16,1.769,33.7,117.1
+Karnataka,District_2,2020,Kharif,Barley,365.57,3687.3,10.086,23.0,46.1
+Punjab,District_3,2019,Rabi,Barley,1209.92,543.7,0.449,23.8,431.3
+Rajasthan,District_4,2020,Kharif,Sugarcane,1040.2,18857.41,18.129,38.2,236.4
+Madhya Pradesh,District_5,2019,Summer,Cotton,264.54,83368.49,7.4563157404881455,24.2,114.9
+Karnataka,District_6,2018,Rabi,Pulses,3311.18,3020.69,0.912,18.1,229.1
+Madhya Pradesh,District_7,2023,Kharif,Soybean,484.25,620.46,1.281,26.4,157.6
+Madhya Pradesh,District_8,2020,Rabi,Pulses,596.11,3113.97,5.224,24.1,426.2
+Karnataka,District_9,2021,Rabi,Sugarcane,398.09,13158.07,6.092794453681599,26.8,31.7
+Uttar Pradesh,District_10,2021,Rabi,Wheat,2210.97,1184.67,0.536,24.3,108.0
+Haryana,District_11,2022,Kharif,Soybean,238.43,2456.89,10.304,36.1,533.4
+Madhya Pradesh,District_12,2019,Summer,Maize,2034.23,4969.04,2.443,27.8,232.9
+Karnataka,District_13,2020,Summer,Pulses,3116.65,18116.38,5.813,19.6,612.8
+Karnataka,District_14,2022,Kharif,Maize,1876.53,9538.92,5.083,25.6,55.8
+West Bengal,District_15,2020,Rabi,Pulses,2236.41,10150.74,4.539,21.0,349.9
+Uttar Pradesh,District_16,2019,Kharif,Maize,2343.84,1572.78,0.671,23.8,333.5
+Tamil Nadu,District_17,2021,Kharif,Pulses,424.36,5447.32,12.837,20.4,38.7
+West Bengal,District_18,2018,Kharif,Maize,4604.25,1009.34,0.219,35.5,117.2
+West Bengal,District_19,2021,Rabi,Sugarcane,692.23,10596.61,15.308,21.5,136.3
+Gujarat,District_20,2022,Kharif,Groundnut,1026.19,16761.33,16.334,28.4,40.6
+Haryana,District_21,2023,Rabi,Soybean,786.32,6836.6,8.694,23.4,119.1
+Karnataka,District_22,2018,Kharif,Cotton,1792.81,1717.95,0.958,19.2,298.4
+Haryana,District_23,2022,Summer,Wheat,640.32,2196.04,3.43,26.0,108.6
+Punjab,District_24,2019,Kharif,Mustard,1172.53,44791.53,12.943842250928563,27.0,180.1
+Gujarat,District_25,2018,Kharif,Rice,318.83,1761.52,5.525,27.8,181.2
+Tamil Nadu,District_26,2022,Summer,Cotton,3514.54,14400.11,4.097,11.9,147.0
+Haryana,District_27,2019,Rabi,Rice,2144.67,4955.92,2.311,18.8,84.4
+Maharashtra,District_28,2021,Rabi,Soybean,818.72,1805.87,2.206,29.8,251.4
+Madhya Pradesh,District_29,2023,Kharif,Cotton,685.98,396.64,0.578,20.4,41.7
+Punjab,District_30,2019,Summer,Maize,2089.39,4094.5,1.96,26.0,149.4
+Uttar Pradesh,District_31,2020,Rabi,Maize,540.61,3417.45,6.321,18.7,449.6
+Tamil Nadu,District_32,2019,Kharif,Mustard,1243.1,44792.77,5.989686234087069,28.7,103.8
+Punjab,District_33,2019,Summer,Rice,3503.08,820.33,0.234,29.7,82.9
+Madhya Pradesh,District_34,2023,Rabi,Wheat,487.23,93167.38,7.713813950795846,28.7,265.2
+Gujarat,District_35,2020,Rabi,Soybean,1585.41,5261.73,3.319,30.2,169.1
+Madhya Pradesh,District_36,2022,Summer,Maize,1503.76,5253.99,3.494,32.8,269.4
+West Bengal,District_37,2022,Summer,Groundnut,994.92,1224.63,1.231,19.1,153.1
+Madhya Pradesh,District_38,2019,Summer,Sugarcane,662.63,4779.35,7.213,21.1,22.0
+West Bengal,District_39,2020,Summer,Sugarcane,3695.23,6060.67,1.64,29.5,381.4
+Gujarat,District_40,2020,Kharif,Pulses,603.31,12161.02,13.5510942199744,30.7,777.5
+Rajasthan,District_41,2023,Summer,Wheat,179.1,687.13,3.837,21.6,414.6
+West Bengal,District_42,2021,Rabi,Sugarcane,2080.85,24591.87,11.818,21.3,8.7
+Uttar Pradesh,District_43,2022,Rabi,Pulses,329.87,5126.22,15.54,21.7,212.9
+Madhya Pradesh,District_44,2023,Kharif,Rice,2190.49,7423.04,3.389,17.0,102.2
+Madhya Pradesh,District_45,2018,Rabi,Maize,4166.8,2140.05,0.514,18.6,62.3
+Uttar Pradesh,District_46,2022,Rabi,Maize,2058.54,740.84,0.36,18.8,163.7
+Maharashtra,District_47,2023,Summer,Groundnut,3201.62,3324.54,1.038,23.5,131.7
+Karnataka,District_48,2022,Rabi,Cotton,8267.18,3947.92,0.478,26.4,222.9
+Rajasthan,District_49,2021,Kharif,Sugarcane,2883.5,373.1,0.129,27.2,155.3
+Tamil Nadu,District_50,2018,Summer,Rice,1526.26,9797.95,6.42,22.5,60.5
+West Bengal,District_1,2021,Summer,Barley,5619.22,13290.26,2.365,22.6,93.6
+Uttar Pradesh,District_2,2018,Kharif,Sugarcane,6340.9,997.75,0.157,25.6,82.2
+Gujarat,District_3,2019,Summer,Wheat,6430.27,642.99,0.1,17.5,37.6
+West Bengal,District_4,2023,Summer,Cotton,670.39,1892.32,2.823,29.8,49.5
+Karnataka,District_5,2018,Kharif,Sugarcane,283.15,3089.74,10.912,31.4,125.4
+Gujarat,District_6,2021,Summer,Rice,630.69,2005.69,3.18,21.9,463.6
+Punjab,District_7,2022,Kharif,Sugarcane,2216.4,2720.64,1.228,23.0,96.7
+Madhya Pradesh,District_8,2018,Kharif,Wheat,1285.83,4155.62,3.232,31.2,81.0
+Punjab,District_9,2023,Rabi,Barley,892.05,382.83,0.429,24.4,57.7
+West Bengal,District_10,2018,Rabi,Soybean,1920.77,454.89,0.237,27.9,152.1
+Karnataka,District_11,2020,Summer,Mustard,251.94,50.23,0.199,24.5,381.2
+Rajasthan,District_12,2022,Summer,Barley,1262.9,12256.58,9.705,32.8,736.7
+West Bengal,District_13,2023,Kharif,Pulses,3355.84,3049.83,0.909,27.5,186.5
+Uttar Pradesh,District_14,2023,Summer,Sugarcane,1899.44,14353.9,7.557,27.7,166.0
+Haryana,District_15,2019,Kharif,Maize,2190.34,540.99,0.247,27.8,96.1
+West Bengal,District_16,2021,Kharif,Groundnut,5417.41,3092.12,0.571,22.2,109.8
+Madhya Pradesh,District_17,2019,Summer,Maize,1026.45,4114.36,4.008,22.7,245.5
+Madhya Pradesh,District_18,2023,Kharif,Barley,570.73,1283.47,2.249,28.8,115.4
+West Bengal,District_19,2022,Rabi,Maize,3602.97,289.99,0.08,25.6,130.3
+Gujarat,District_20,2018,Summer,Rice,3537.31,40896.8,11.562,19.1,145.4
+Haryana,District_21,2018,Rabi,Maize,1916.57,24316.86,12.688,34.4,92.5
+Uttar Pradesh,District_22,2022,Summer,Cotton,934.14,1680.93,1.799,29.9,139.8
+West Bengal,District_23,2023,Kharif,Soybean,1098.15,6408.25,5.835,25.2,29.5
+Gujarat,District_24,2018,Summer,Sugarcane,305.89,1440.6,4.71,23.6,230.2
+Madhya Pradesh,District_25,2018,Rabi,Maize,3337.4,669.74,0.201,26.0,974.0
+Madhya Pradesh,District_26,2018,Kharif,Wheat,3221.66,46207.26,14.343,27.6,95.4
+Karnataka,District_27,2021,Summer,Soybean,295.4,248.87,0.842,14.8,200.2
+West Bengal,District_28,2021,Summer,Soybean,2611.37,1942.53,0.744,35.6,293.3
+Haryana,District_29,2020,Summer,Maize,1642.71,3382.89,2.059,21.1,413.3
+Maharashtra,District_30,2019,Rabi,Soybean,394.66,35484.63,8.464692870786672,25.0,120.1
+Haryana,District_31,2022,Rabi,Groundnut,328.32,11440.13,14.73045349514161,25.2,35.1
+Madhya Pradesh,District_32,2022,Summer,Maize,1593.19,242.65,0.152,35.0,183.8
+Madhya Pradesh,District_33,2022,Kharif,Rice,736.78,2968.69,4.029,24.6,164.5
+Punjab,District_34,2020,Kharif,Barley,6767.92,3076.63,0.455,32.9,112.6
+Madhya Pradesh,District_35,2021,Rabi,Cotton,2842.95,2116.44,0.744,27.0,133.4
+Uttar Pradesh,District_36,2023,Kharif,Mustard,1761.1,7553.1,4.289,20.2,166.5
+Tamil Nadu,District_37,2023,Rabi,Pulses,1850.26,360.08,0.195,25.7,198.2
+West Bengal,District_38,2020,Summer,Soybean,4150.01,1614.93,0.389,24.4,191.7
+Haryana,District_39,2023,Rabi,Rice,2556.82,6113.34,2.391,19.6,124.7
+Tamil Nadu,District_40,2022,Rabi,Sugarcane,1807.62,8261.52,4.57,26.8,201.8
+Gujarat,District_41,2019,Summer,Sugarcane,411.47,3729.87,9.065,25.1,118.2
+Maharashtra,District_42,2018,Kharif,Pulses,23434.09,1934.13,0.083,27.8,248.0
+Uttar Pradesh,District_43,2021,Rabi,Cotton,363.88,2490.12,6.843,26.0,89.8
+Haryana,District_44,2021,Rabi,Soybean,802.28,9050.82,11.281,21.7,157.3
+Tamil Nadu,District_45,2020,Summer,Groundnut,209.61,3136.46,14.963,28.8,40.5
+Maharashtra,District_46,2021,Kharif,Pulses,1879.57,624.67,0.332,21.9,110.4
+Punjab,District_47,2022,Rabi,Cotton,1275.52,468.6,0.367,9.5,233.7
+Uttar Pradesh,District_48,2023,Summer,Soybean,2357.31,319.11,0.135,25.6,64.9
+Uttar Pradesh,District_49,2022,Rabi,Rice,192.66,26459.52,14.797343347738597,22.2,114.9
+Punjab,District_50,2020,Summer,Barley,3337.26,10008.53,2.999,26.9,21.7
+West Bengal,District_1,2022,Kharif,Groundnut,489.1,2540.89,5.195,35.0,49.7
+Punjab,District_2,2023,Kharif,Mustard,944.82,1509.16,1.597,35.1,61.2
+Uttar Pradesh,District_3,2019,Kharif,Sugarcane,2783.8,1260.3,0.453,24.2,161.0
+Uttar Pradesh,District_4,2020,Kharif,Wheat,1424.06,15365.13,10.79,20.9,193.8
+Tamil Nadu,District_5,2019,Rabi,Rice,1528.35,51878.01,7.682760204535567,27.9,141.9
+Madhya Pradesh,District_6,2018,Rabi,Sugarcane,2438.6,1202.2,0.493,23.1,109.3
+Maharashtra,District_7,2019,Kharif,Maize,1683.77,16442.48,9.765,27.0,109.6
+Punjab,District_8,2018,Kharif,Wheat,779.69,3108.88,3.987,21.7,263.2
+Maharashtra,District_9,2018,Kharif,Sugarcane,928.46,2167.56,2.335,26.3,176.0
+Punjab,District_10,2019,Rabi,Cotton,1355.44,28461.89,5.4097822224989045,20.9,113.6
+Gujarat,District_11,2020,Kharif,Groundnut,447.84,2935.85,6.556,30.9,417.6
+Uttar Pradesh,District_12,2023,Kharif,Sugarcane,2969.08,4649.65,1.566,22.1,706.3
+Madhya Pradesh,District_13,2022,Kharif,Mustard,1463.6,4326.05,2.956,28.3,54.8
+Tamil Nadu,District_14,2022,Summer,Barley,1181.78,260.24,0.22,18.7,225.4
+Madhya Pradesh,District_15,2023,Kharif,Cotton,3613.73,4594.51,1.271,28.9,1758.0
+Madhya Pradesh,District_16,2018,Summer,Rice,972.52,1281.72,1.318,20.2,185.7
+Madhya Pradesh,District_17,2018,Summer,Rice,913.77,353.64,0.387,26.3,162.8
+Maharashtra,District_18,2020,Kharif,Rice,675.44,1372.37,2.032,30.1,141.9
+Punjab,District_19,2021,Summer,Rice,1545.44,1355.49,0.877,24.0,219.7
+Rajasthan,District_20,2019,Kharif,Barley,1492.86,13972.18,9.359,19.9,271.5
+Gujarat,District_21,2018,Rabi,Sugarcane,563.25,604.45,1.073,27.5,54.8
+Haryana,District_22,2022,Rabi,Soybean,918.1,911.63,0.993,20.8,145.3
+Madhya Pradesh,District_23,2020,Rabi,Sugarcane,567.02,4243.24,7.483,23.0,24.2
+West Bengal,District_24,2019,Rabi,Maize,541.93,408.02,0.753,26.3,125.5
+Maharashtra,District_25,2020,Summer,Groundnut,194.44,1109.31,5.705,31.8,72.1
+Tamil Nadu,District_26,2019,Kharif,Wheat,870.52,245.5,0.282,25.1,194.7
+Haryana,District_27,2019,Kharif,Soybean,199.89,11849.22,12.05063284205379,25.1,39.4
+Rajasthan,District_28,2023,Kharif,Soybean,690.34,1896.86,2.748,28.7,98.5
+West Bengal,District_29,2018,Rabi,Sugarcane,594.25,2910.63,4.898,25.3,321.6
+Rajasthan,District_30,2020,Rabi,Soybean,3139.74,11778.32,3.751,28.2,86.4
+Haryana,District_31,2020,Kharif,Pulses,397.45,1008.88,2.538,30.4,32.3
+Madhya Pradesh,District_32,2023,Rabi,Pulses,512.25,1866.87,3.644,23.4,182.4
+West Bengal,District_33,2022,Kharif,Maize,748.8,611.25,0.816,8.6,92.8
+Rajasthan,District_34,2022,Kharif,Wheat,613.91,609.26,0.992,20.9,127.9
+Tamil Nadu,District_35,2018,Kharif,Mustard,4312.42,749.29,0.174,31.0,82.8
+Punjab,District_36,2018,Kharif,Barley,351.23,1424.06,4.054,24.8,720.2
+Uttar Pradesh,District_37,2021,Kharif,Sugarcane,750.39,1673.72,2.23,23.3,42.7
+Punjab,District_38,2023,Kharif,Barley,1528.54,4596.03,3.007,30.8,1432.0
+Haryana,District_39,2022,Kharif,Mustard,2647.0,783.03,0.296,24.5,108.6
+Maharashtra,District_40,2019,Rabi,Sugarcane,749.76,4814.8,6.422,14.5,171.9
+Uttar Pradesh,District_41,2020,Kharif,Sugarcane,161.08,6170.3,9.509865026483437,17.5,93.7
+Gujarat,District_42,2018,Kharif,Wheat,943.78,1477.74,1.566,27.1,90.6
+Tamil Nadu,District_43,2020,Rabi,Barley,4238.77,891.51,0.21,24.7,79.2
+Gujarat,District_44,2020,Rabi,Pulses,1454.17,3386.72,2.329,32.3,240.1
+West Bengal,District_45,2021,Rabi,Rice,1389.11,2198.7,1.583,21.3,48.0
+Uttar Pradesh,District_46,2022,Kharif,Barley,378.79,4148.61,10.952,23.5,198.6
+Gujarat,District_47,2018,Summer,Groundnut,341.84,31407.43,6.007528439595763,20.6,25.9
+Gujarat,District_48,2020,Summer,Groundnut,1116.6,3304.22,2.959,22.4,184.7
+Rajasthan,District_49,2018,Rabi,Sugarcane,263.39,1142.71,4.338,15.5,292.7
+Punjab,District_50,2019,Summer,Rice,2395.54,783.42,0.327,23.1,53.5
+Rajasthan,District_1,2021,Rabi,Cotton,470.29,830.23,1.765,24.7,255.4
+Uttar Pradesh,District_2,2019,Kharif,Mustard,1069.92,332.24,0.311,24.3,154.6
+Uttar Pradesh,District_3,2018,Summer,Maize,166.37,12077.69,12.075228189780429,35.7,533.1
+Haryana,District_4,2018,Kharif,Rice,739.67,104.59,0.141,34.2,74.9
+Rajasthan,District_5,2022,Summer,Maize,335.0,6199.09,18.505,21.2,1412.0
+Karnataka,District_6,2020,Kharif,Barley,107.56,810.7,7.537,14.8,21.9
+Punjab,District_7,2020,Summer,Barley,1885.3,1382.15,0.733,24.5,114.0
+Uttar Pradesh,District_8,2019,Kharif,Maize,5659.89,775.12,0.137,26.9,38.1
+Haryana,District_9,2021,Kharif,Mustard,3393.01,26076.69,7.685,20.7,652.5
+Rajasthan,District_10,2023,Summer,Rice,2168.28,3054.81,1.409,20.9,120.4
+Punjab,District_11,2020,Kharif,Cotton,724.79,9755.32,13.46,32.9,129.4
+Rajasthan,District_12,2022,Kharif,Sugarcane,2455.02,20968.79,8.541,23.7,211.6
+Gujarat,District_13,2019,Kharif,Wheat,3728.84,3808.95,1.021,28.3,147.8
+Haryana,District_14,2019,Summer,Barley,1257.43,495.99,0.394,20.3,92.3
+Punjab,District_15,2023,Summer,Groundnut,335.51,2141.02,6.381,24.7,54.3
+Madhya Pradesh,District_16,2022,Kharif,Mustard,665.55,979.09,1.471,23.3,169.8
+West Bengal,District_17,2021,Kharif,Wheat,6019.12,1400.72,0.233,21.6,201.0
+West Bengal,District_18,2022,Summer,Cotton,1017.65,2586.51,2.542,30.8,258.9
+Punjab,District_19,2021,Summer,Soybean,39.46,2437.59,5.3117490911192125,18.1,685.5
+Rajasthan,District_20,2022,Kharif,Sugarcane,252.42,5531.22,13.701966904922422,26.5,26.1
+Haryana,District_21,2022,Kharif,Barley,717.34,6877.13,9.587,23.2,140.6
+West Bengal,District_22,2018,Kharif,Sugarcane,3089.69,2437.63,0.789,27.1,385.1
+Haryana,District_23,2019,Rabi,Wheat,834.54,5460.0,6.543,23.3,134.3
+West Bengal,District_24,2022,Summer,Sugarcane,3147.71,1307.62,0.415,29.3,22.9
+Gujarat,District_25,2023,Rabi,Soybean,647.97,21421.91,6.3865252911330375,20.3,52.8
+Rajasthan,District_26,2022,Summer,Wheat,153.81,1276.32,8.298,30.8,193.0
+Gujarat,District_27,2020,Summer,Barley,670.78,17957.8,6.27311878746725,24.9,187.5
+West Bengal,District_28,2019,Summer,Rice,1548.35,325.67,0.21,18.4,254.2
+Madhya Pradesh,District_29,2020,Summer,Groundnut,1425.03,1684.78,1.182,28.4,79.5
+Madhya Pradesh,District_30,2019,Summer,Wheat,312.59,1814.44,5.805,24.0,182.7
+Gujarat,District_31,2020,Summer,Pulses,771.86,4530.05,5.869,16.5,69.6
+Madhya Pradesh,District_32,2022,Summer,Soybean,16069.43,10858.74,0.676,26.7,182.7
+West Bengal,District_33,2022,Rabi,Wheat,319.49,457.56,1.432,30.0,154.9
+Punjab,District_34,2018,Kharif,Wheat,2123.29,565.68,0.266,31.4,77.0
+Gujarat,District_35,2023,Kharif,Pulses,134.74,363.99,2.701,23.1,516.2
+Maharashtra,District_36,2020,Rabi,Barley,2601.37,21596.28,8.302,25.7,37.9
+Rajasthan,District_37,2021,Rabi,Wheat,449.29,4658.31,10.368,25.3,132.5
+Madhya Pradesh,District_38,2018,Rabi,Groundnut,1639.4,586.07,0.357,32.4,75.6
+Madhya Pradesh,District_39,2020,Rabi,Sugarcane,301.41,1533.58,5.088,20.9,643.8
+Uttar Pradesh,District_40,2020,Summer,Barley,1466.82,17547.07,11.963,22.7,239.5
+Karnataka,District_41,2018,Kharif,Groundnut,442.02,1964.16,4.444,20.8,88.3
+Gujarat,District_42,2022,Summer,Barley,536.44,1797.62,3.351,17.8,118.7
+Tamil Nadu,District_43,2020,Kharif,Groundnut,1706.14,923.39,0.541,26.2,657.9
+Madhya Pradesh,District_44,2022,Kharif,Soybean,713.09,640.67,0.898,33.0,69.6
+Rajasthan,District_45,2018,Rabi,Groundnut,1604.2,17588.24,10.964,24.0,36.2
+Maharashtra,District_46,2022,Summer,Maize,906.11,36711.76,6.756722979685845,20.6,187.3
+Madhya Pradesh,District_47,2019,Rabi,Groundnut,1173.2,680.08,0.58,25.9,190.7
+Maharashtra,District_48,2021,Summer,Rice,1711.43,24524.15,14.33,27.9,252.9
+West Bengal,District_49,2020,Kharif,Rice,772.77,1434.99,1.857,24.2,254.2
+West Bengal,District_50,2023,Rabi,Mustard,405.03,6637.38,16.387,32.0,611.9
+Karnataka,District_1,2021,Rabi,Maize,643.99,24718.83,14.602663584920666,20.9,37.5
+Punjab,District_2,2022,Kharif,Maize,3623.3,2397.99,0.662,23.6,56.7
+Tamil Nadu,District_3,2020,Kharif,Sugarcane,1231.73,1822.72,1.48,26.5,252.1
+Uttar Pradesh,District_4,2022,Kharif,Maize,471.11,9913.19,11.93169360253846,27.0,61.3
+Karnataka,District_5,2019,Rabi,Sugarcane,1638.54,564.01,0.344,25.2,46.3
+Haryana,District_6,2018,Summer,Mustard,1751.65,16657.1,9.509,18.6,660.3
+Uttar Pradesh,District_7,2020,Rabi,Mustard,1844.57,3693.07,2.002,36.7,40.6
+Gujarat,District_8,2019,Summer,Soybean,412.47,1253.1,3.038,23.8,112.1
+Rajasthan,District_9,2019,Rabi,Rice,554.25,1204.41,2.173,25.6,141.5
+Haryana,District_10,2020,Rabi,Groundnut,557.34,374.21,0.671,28.1,423.0
+Haryana,District_11,2022,Kharif,Groundnut,764.6,1333.74,1.744,21.8,33.3
+Karnataka,District_12,2023,Summer,Pulses,1879.8,2006.09,1.067,25.3,206.9
+Punjab,District_13,2019,Rabi,Pulses,1474.66,606.72,0.411,21.6,72.8
+Karnataka,District_14,2021,Rabi,Cotton,1595.94,2784.44,1.745,27.1,245.2
+Gujarat,District_15,2019,Kharif,Barley,4247.22,6059.46,1.427,23.6,71.8
+Madhya Pradesh,District_16,2023,Kharif,Soybean,2183.95,2164.17,0.991,26.3,522.1
+Madhya Pradesh,District_17,2022,Summer,Cotton,951.65,8055.33,8.465,19.8,72.2
+Punjab,District_18,2022,Rabi,Cotton,335.67,888.28,2.646,20.9,20.7
+Gujarat,District_19,2021,Summer,Wheat,536.71,13427.69,13.013715354636368,18.2,79.0
+Punjab,District_20,2019,Rabi,Wheat,844.12,3578.58,4.239,21.4,120.4
+Maharashtra,District_21,2022,Summer,Cotton,2512.74,30269.19,12.046,12.1,352.8
+Madhya Pradesh,District_22,2023,Kharif,Maize,1067.07,111449.4,8.97634985732753,23.5,54.2
+Haryana,District_23,2020,Rabi,Barley,568.96,1472.38,2.588,22.3,55.1
+Tamil Nadu,District_24,2018,Summer,Soybean,526.95,1566.19,2.972,25.8,320.0
+Rajasthan,District_25,2018,Kharif,Cotton,1022.93,2060.36,2.014,25.2,49.4
+Gujarat,District_26,2018,Kharif,Groundnut,2670.41,7284.86,2.728,31.3,128.6
+Uttar Pradesh,District_27,2019,Summer,Barley,5383.1,21784.52,4.047,38.0,130.7
+Punjab,District_28,2021,Rabi,Wheat,892.68,1119.67,1.254,30.7,176.6
+Rajasthan,District_29,2022,Rabi,Groundnut,1048.65,5280.98,5.036,22.7,81.5
+Uttar Pradesh,District_30,2020,Kharif,Wheat,325.73,2431.12,7.464,22.5,70.7
+Rajasthan,District_31,2023,Rabi,Wheat,7625.04,7533.87,0.988,29.3,194.0
+Tamil Nadu,District_32,2020,Rabi,Barley,270.16,28686.63,8.363127275049555,16.6,72.5
+Uttar Pradesh,District_33,2023,Rabi,Wheat,3539.22,2078.72,0.587,23.4,50.0
+Karnataka,District_34,2019,Kharif,Mustard,761.02,243.52,0.32,23.8,396.3
+West Bengal,District_35,2018,Summer,Rice,602.23,9098.39,15.108,27.9,219.3
+Karnataka,District_36,2019,Rabi,Mustard,361.4,854.86,2.365,28.1,610.3
+Madhya Pradesh,District_37,2021,Kharif,Rice,12210.46,2405.05,0.197,21.3,277.9
+West Bengal,District_38,2021,Kharif,Pulses,1368.53,9706.45,7.093,22.9,53.8
+Karnataka,District_39,2023,Summer,Pulses,1120.22,4656.84,4.157,27.2,160.3
+West Bengal,District_40,2022,Rabi,Wheat,2661.73,2559.12,0.961,21.0,65.9
+West Bengal,District_41,2022,Rabi,Soybean,572.02,1256.62,2.197,31.0,39.6
+Haryana,District_42,2023,Summer,Soybean,1098.66,38.48,0.035,28.0,103.8
+Punjab,District_43,2021,Summer,Rice,1160.19,8497.11,7.324,25.9,325.5
+Punjab,District_44,2021,Kharif,Groundnut,657.11,2039.73,3.104,27.0,184.9
+Haryana,District_45,2021,Kharif,Barley,3639.63,28854.01,7.928,22.7,48.8
+Rajasthan,District_46,2019,Summer,Wheat,881.25,5415.62,6.145,21.9,100.9
+Maharashtra,District_47,2021,Rabi,Barley,232.03,1323.87,5.706,22.9,132.4
+Rajasthan,District_48,2020,Kharif,Mustard,811.19,14769.29,18.207,27.5,38.4
+Uttar Pradesh,District_49,2018,Kharif,Soybean,1406.95,16759.06,11.912,26.0,262.6
+Uttar Pradesh,District_50,2021,Rabi,Maize,448.77,2146.2,4.782,22.9,123.6
+West Bengal,District_1,2023,Kharif,Mustard,485.61,17862.65,7.344840067831699,28.7,48.8
+Karnataka,District_2,2018,Rabi,Mustard,635.07,1296.0,2.041,24.1,46.6
+Karnataka,District_3,2019,Rabi,Rice,3719.1,3787.54,1.018,21.5,358.0
+Punjab,District_4,2023,Rabi,Sugarcane,673.74,7024.17,10.426,26.3,109.4
+Gujarat,District_5,2018,Summer,Mustard,4578.46,9673.76,2.113,19.9,384.6
+Rajasthan,District_6,2023,Summer,Wheat,592.91,7572.53,12.772,16.6,522.0
+Madhya Pradesh,District_7,2019,Summer,Cotton,1517.8,1809.88,1.192,25.0,336.3
+Tamil Nadu,District_8,2020,Rabi,Cotton,701.88,15375.74,9.806480283124088,21.7,96.9
+Karnataka,District_9,2019,Rabi,Wheat,2331.07,2473.42,1.061,23.7,20.1
+Tamil Nadu,District_10,2019,Summer,Sugarcane,358.43,1269.6,3.542,20.2,190.6
+West Bengal,District_11,2023,Kharif,Sugarcane,2305.05,1297.89,0.563,31.0,791.0
+Tamil Nadu,District_12,2022,Rabi,Rice,1228.89,54719.89,10.518287335341686,21.7,144.3
+Madhya Pradesh,District_13,2021,Kharif,Soybean,578.25,979.48,1.694,22.8,30.2
+Haryana,District_14,2021,Kharif,Barley,928.69,20690.97,11.317748436527554,26.9,86.5
+Madhya Pradesh,District_15,2020,Rabi,Sugarcane,5084.01,542.83,0.107,18.1,128.1
+Tamil Nadu,District_16,2020,Rabi,Maize,1258.71,6197.23,4.923,17.7,61.7
+Madhya Pradesh,District_17,2021,Kharif,Rice,543.09,4654.66,8.571,26.9,19.1
+Maharashtra,District_18,2022,Kharif,Pulses,328.75,33922.72,7.571185039986945,22.8,137.2
+West Bengal,District_19,2021,Summer,Groundnut,1817.84,1116.99,0.614,20.5,79.2
+Rajasthan,District_20,2022,Summer,Pulses,1333.88,738.04,0.553,28.0,612.9
+Haryana,District_21,2020,Rabi,Rice,2197.38,2502.97,1.139,20.9,160.9
+Karnataka,District_22,2018,Summer,Mustard,254.11,36214.06,14.486540809029906,23.6,216.1
+Uttar Pradesh,District_23,2023,Summer,Barley,339.59,791.37,2.33,20.5,134.9
+Rajasthan,District_24,2020,Summer,Groundnut,3452.59,61.4,0.018,26.5,160.0
+Uttar Pradesh,District_25,2020,Summer,Pulses,1527.43,3260.55,2.135,31.7,39.6
+West Bengal,District_26,2019,Kharif,Groundnut,1869.45,12385.53,6.625,15.7,64.6
+Haryana,District_27,2019,Rabi,Maize,418.77,651.51,1.556,25.6,354.6
+Punjab,District_28,2019,Summer,Maize,411.17,10634.92,6.697584982071358,29.3,175.5
+Karnataka,District_29,2023,Kharif,Maize,2955.01,630.26,0.213,22.9,107.9
+Maharashtra,District_30,2019,Kharif,Rice,3097.58,2392.66,0.772,19.3,219.0
+Punjab,District_31,2022,Kharif,Barley,369.33,9219.01,14.656531747664124,27.1,222.4
+West Bengal,District_32,2021,Summer,Rice,305.1,502.1,1.646,30.0,729.8
+Rajasthan,District_33,2018,Summer,Cotton,983.78,3913.82,3.978,29.5,169.1
+Maharashtra,District_34,2020,Rabi,Mustard,493.07,18443.37,5.148561225075038,26.8,63.4
+Madhya Pradesh,District_35,2022,Summer,Mustard,482.91,6068.71,12.567,25.5,135.3
+Tamil Nadu,District_36,2018,Summer,Maize,313.76,1011.37,3.223,20.5,241.3
+Maharashtra,District_37,2022,Kharif,Cotton,686.47,29087.9,9.811256918168457,29.3,329.2
+West Bengal,District_38,2022,Rabi,Sugarcane,345.61,8003.14,8.333678381165628,29.0,40.8
+Gujarat,District_39,2020,Summer,Sugarcane,366.72,182.97,0.499,19.3,181.8
+Tamil Nadu,District_40,2021,Summer,Maize,1477.92,10898.34,7.374,26.8,72.4
+Uttar Pradesh,District_41,2019,Kharif,Pulses,1037.74,1265.14,1.219,28.3,94.3
+Karnataka,District_42,2023,Kharif,Rice,1780.91,4003.18,2.248,29.4,292.0
+Uttar Pradesh,District_43,2021,Summer,Maize,210.81,13521.09,9.491234139302508,24.6,269.6
+Maharashtra,District_44,2023,Rabi,Soybean,1107.52,1307.14,1.18,20.7,86.3
+Uttar Pradesh,District_45,2020,Rabi,Groundnut,8739.76,252.55,0.029,22.5,130.8
+West Bengal,District_46,2020,Kharif,Mustard,755.76,28518.77,10.70664578980789,20.0,96.7
+Madhya Pradesh,District_47,2020,Kharif,Sugarcane,2501.76,17100.71,6.835,24.7,1500.2
+Rajasthan,District_48,2018,Summer,Wheat,2479.98,2615.25,1.055,23.8,185.4
+Karnataka,District_49,2023,Kharif,Sugarcane,2605.03,10722.85,4.116,35.7,75.8
+Uttar Pradesh,District_50,2021,Summer,Mustard,1295.51,1712.86,1.322,29.5,427.4
+Uttar Pradesh,District_1,2021,Rabi,Groundnut,1931.57,3447.67,1.785,29.8,439.6
+Maharashtra,District_2,2022,Rabi,Mustard,2206.17,2400.83,1.088,27.4,622.2
+Rajasthan,District_3,2022,Summer,Wheat,2070.29,1819.99,0.879,23.2,788.7
+Punjab,District_4,2022,Kharif,Maize,358.73,5110.0,14.245,23.6,261.4
+Uttar Pradesh,District_5,2020,Rabi,Cotton,198.86,486.74,2.448,24.1,112.2
+West Bengal,District_6,2021,Kharif,Wheat,231.93,2043.93,8.813,25.9,126.2
+Gujarat,District_7,2023,Rabi,Mustard,837.01,4777.72,5.708,26.9,117.5
+Karnataka,District_8,2020,Summer,Mustard,1986.1,46964.68,9.35589158012709,25.0,107.4
+Uttar Pradesh,District_9,2018,Summer,Soybean,363.43,517.34,1.423,23.5,400.2
+West Bengal,District_10,2022,Summer,Soybean,2762.72,6508.27,2.356,22.0,148.5
+West Bengal,District_11,2020,Rabi,Barley,663.63,7671.16,11.559,18.0,322.8
+Karnataka,District_12,2020,Kharif,Soybean,669.98,178.56,0.267,31.4,255.0
+Punjab,District_13,2018,Kharif,Rice,475.27,5518.15,11.611,36.0,61.6
+West Bengal,District_14,2019,Kharif,Cotton,166.54,11163.75,9.14846850301595,31.0,37.6
+Gujarat,District_15,2021,Rabi,Groundnut,1379.28,7208.23,5.226,18.7,55.2
+West Bengal,District_16,2023,Rabi,Wheat,6079.44,2628.34,0.432,28.9,105.5
+West Bengal,District_17,2019,Rabi,Mustard,1030.02,4914.08,4.771,30.1,165.3
+West Bengal,District_18,2022,Rabi,Barley,172.32,3845.92,12.327234154133066,23.0,88.4
+Madhya Pradesh,District_19,2020,Rabi,Barley,2393.1,236.47,0.099,27.4,260.5
+Madhya Pradesh,District_20,2018,Kharif,Groundnut,215.98,3983.76,18.445,22.7,97.3
+Punjab,District_21,2018,Rabi,Cotton,327.33,1718.82,5.251,32.6,182.3
+Uttar Pradesh,District_22,2021,Rabi,Wheat,864.08,1035.63,1.199,26.8,163.1
+West Bengal,District_23,2019,Kharif,Sugarcane,1239.97,123927.86,11.858762750864646,20.4,594.4
+Rajasthan,District_24,2021,Rabi,Soybean,399.95,19514.71,13.332712820358479,28.3,68.0
+Uttar Pradesh,District_25,2020,Kharif,Maize,831.04,530.99,0.639,30.3,868.5
+Punjab,District_26,2021,Kharif,Barley,2242.09,5013.82,2.236,26.0,92.3
+Haryana,District_27,2023,Summer,Soybean,2571.33,26556.71,10.328,27.4,50.8
+Uttar Pradesh,District_28,2018,Summer,Soybean,3833.2,315.99,0.082,24.7,124.8
+Uttar Pradesh,District_29,2018,Summer,Rice,7401.36,3345.85,0.452,19.3,1982.5
+Tamil Nadu,District_30,2022,Summer,Cotton,2464.86,3590.72,1.457,24.2,303.7
+Maharashtra,District_31,2022,Rabi,Maize,882.95,440.65,0.499,27.6,240.4
+Tamil Nadu,District_32,2020,Summer,Sugarcane,2589.74,5267.58,2.034,24.4,280.4
+Gujarat,District_33,2023,Kharif,Mustard,1748.85,15904.69,9.094,29.0,80.2
+Madhya Pradesh,District_34,2019,Rabi,Rice,1819.59,28626.02,15.732,23.0,192.6
+Madhya Pradesh,District_35,2021,Summer,Soybean,1309.26,2050.74,1.566,23.4,148.7
+Maharashtra,District_36,2020,Kharif,Soybean,440.52,127066.72,7.499589812394955,29.2,631.0
+Karnataka,District_37,2022,Rabi,Pulses,392.25,136.05,0.347,26.1,136.1
+Karnataka,District_38,2021,Rabi,Maize,995.14,5086.4,5.111,22.9,109.7
+Punjab,District_39,2022,Summer,Maize,1272.72,358.37,0.282,30.2,58.4
+Maharashtra,District_40,2021,Rabi,Pulses,555.88,3412.75,6.139,21.6,166.0
+Uttar Pradesh,District_41,2019,Kharif,Maize,1674.62,1362.59,0.814,21.4,187.6
+Karnataka,District_42,2020,Rabi,Soybean,8784.69,6376.13,0.726,10.9,56.8
+West Bengal,District_43,2021,Kharif,Barley,191.65,2464.34,12.859,22.2,213.3
+Rajasthan,District_44,2023,Rabi,Wheat,1963.03,863.53,0.44,31.5,178.8
+Uttar Pradesh,District_45,2018,Summer,Soybean,1026.62,952.95,0.928,14.6,333.9
+Gujarat,District_46,2023,Kharif,Rice,1720.99,54105.4,11.095285097540636,20.2,391.5
+West Bengal,District_47,2023,Rabi,Cotton,712.86,5798.1,8.134,27.2,160.0
+West Bengal,District_48,2018,Rabi,Pulses,947.61,232.02,0.245,13.8,64.8
+Maharashtra,District_49,2023,Rabi,Sugarcane,1248.25,6810.23,5.456,22.4,76.4
+Punjab,District_50,2021,Kharif,Mustard,811.08,2226.05,2.745,30.7,607.7
+Gujarat,District_1,2021,Kharif,Sugarcane,239.72,3001.6,12.521,35.2,169.4
+Karnataka,District_2,2021,Kharif,Soybean,867.91,10196.83,11.749,26.5,600.0
+Maharashtra,District_3,2018,Summer,Rice,266.02,17585.69,10.85194785392854,20.4,221.2
+Karnataka,District_4,2023,Summer,Soybean,2107.36,822.03,0.39,20.2,271.2
+Maharashtra,District_5,2018,Kharif,Cotton,169.77,2850.89,16.793,25.7,314.5
+Maharashtra,District_6,2021,Rabi,Barley,3067.61,1314.0,0.428,26.4,55.8
+Maharashtra,District_7,2023,Summer,Mustard,1685.07,7297.55,4.331,34.3,189.7
+Punjab,District_8,2023,Kharif,Cotton,1691.53,2103.89,1.244,29.9,55.2
+Maharashtra,District_9,2022,Rabi,Pulses,125.93,3114.67,8.697378108726888,25.4,118.2
+Haryana,District_10,2022,Summer,Pulses,789.5,1987.4,2.517,23.3,247.7
+Rajasthan,District_11,2019,Rabi,Soybean,3475.74,2542.29,0.731,40.1,65.3
+Karnataka,District_12,2020,Rabi,Rice,652.88,38444.71,9.860575419026809,28.1,232.2
+Uttar Pradesh,District_13,2022,Rabi,Cotton,373.13,107597.13,8.137821433057287,21.7,44.8
+Tamil Nadu,District_14,2018,Rabi,Groundnut,580.18,5248.19,9.046,23.9,370.4
+Gujarat,District_15,2022,Summer,Rice,1024.26,2565.85,2.505,20.6,87.2
+Madhya Pradesh,District_16,2019,Summer,Barley,468.08,272.2,0.582,13.0,65.3
+Punjab,District_17,2023,Summer,Pulses,3766.18,952.77,0.253,26.6,47.1
+Uttar Pradesh,District_18,2019,Kharif,Soybean,1027.96,2464.87,2.398,33.9,93.4
+West Bengal,District_19,2023,Summer,Maize,629.19,1019.84,1.621,16.8,32.3
+Haryana,District_20,2023,Rabi,Pulses,298.47,1194.1,4.001,25.3,95.7
+Madhya Pradesh,District_21,2020,Summer,Mustard,1780.14,31668.7,17.79,21.5,357.7
+Tamil Nadu,District_22,2022,Rabi,Wheat,1740.05,3112.51,1.789,27.6,127.6
+Uttar Pradesh,District_23,2018,Kharif,Maize,496.6,3559.3,7.167,24.1,57.9
+Madhya Pradesh,District_24,2018,Rabi,Soybean,117.18,1084.33,9.254,18.2,177.9
+Uttar Pradesh,District_25,2021,Rabi,Groundnut,1653.69,17436.43,10.544,20.1,165.7
+Haryana,District_26,2023,Rabi,Maize,909.77,2167.07,2.382,20.8,710.0
+Tamil Nadu,District_27,2018,Kharif,Mustard,1534.67,1364.72,0.889,31.7,279.4
+West Bengal,District_28,2020,Summer,Rice,7763.39,278.35,0.036,31.5,189.5
+Maharashtra,District_29,2023,Summer,Groundnut,1067.6,2719.89,2.548,23.4,306.1
+Karnataka,District_30,2020,Kharif,Pulses,656.0,1302.33,1.985,31.1,133.3
+West Bengal,District_31,2018,Rabi,Groundnut,348.17,37304.51,6.418443976169852,24.1,139.7
+Maharashtra,District_32,2018,Summer,Cotton,802.38,47374.91,7.138012106627328,23.4,559.6
+Punjab,District_33,2021,Kharif,Mustard,1287.65,467.35,0.363,25.3,40.1
+Rajasthan,District_34,2018,Summer,Maize,1156.68,553.78,0.479,26.4,321.9
+Gujarat,District_35,2023,Kharif,Cotton,6145.44,1969.47,0.32,22.2,135.8
+Gujarat,District_36,2023,Rabi,Groundnut,1806.39,876.51,0.485,25.1,117.5
+Karnataka,District_37,2023,Summer,Cotton,958.34,4130.38,4.31,28.9,95.4
+Tamil Nadu,District_38,2021,Kharif,Sugarcane,541.01,1826.33,3.376,25.6,167.8
+Haryana,District_39,2021,Summer,Mustard,1431.78,4540.53,3.171,25.2,143.3
+Tamil Nadu,District_40,2018,Summer,Barley,442.74,13686.16,6.055136464012011,27.5,106.5
+Haryana,District_41,2019,Summer,Rice,1312.69,604.06,0.46,28.3,84.6
+Tamil Nadu,District_42,2019,Summer,Groundnut,1785.43,13264.11,7.429,24.7,32.3
+Rajasthan,District_43,2021,Kharif,Mustard,883.2,999.27,1.131,22.6,83.2
+Punjab,District_44,2018,Rabi,Barley,583.89,74811.3,11.830695751901242,25.9,98.5
+Punjab,District_45,2019,Kharif,Barley,123.31,33909.96,11.607273931091516,17.0,167.5
+Maharashtra,District_46,2018,Kharif,Soybean,3442.1,2515.88,0.731,23.9,713.7
+Madhya Pradesh,District_47,2018,Kharif,Cotton,1641.39,702.49,0.428,12.6,90.7
+Punjab,District_48,2018,Rabi,Barley,1681.8,527.26,0.314,16.6,65.4
+Punjab,District_49,2022,Summer,Sugarcane,230.13,11052.84,14.506063715798728,15.9,83.8
+West Bengal,District_50,2023,Summer,Mustard,4358.31,2848.07,0.653,30.2,167.8
+West Bengal,District_1,2018,Summer,Wheat,688.68,11971.69,17.384,25.1,237.7
+Maharashtra,District_2,2022,Rabi,Wheat,821.56,81335.96,12.296784136472413,18.7,265.8
+Madhya Pradesh,District_3,2021,Summer,Groundnut,376.42,938.63,2.494,27.5,287.8
+Karnataka,District_4,2019,Rabi,Pulses,183.65,470.97,2.564,29.9,322.3
+West Bengal,District_5,2023,Summer,Cotton,3488.92,3979.22,1.141,27.5,118.7
+Karnataka,District_6,2019,Summer,Pulses,3970.3,16599.69,4.181,24.1,767.0
+Uttar Pradesh,District_7,2023,Kharif,Barley,929.34,727.28,0.783,26.2,111.7
+West Bengal,District_8,2019,Rabi,Mustard,555.92,3139.87,5.648,29.5,162.0
+Rajasthan,District_9,2023,Kharif,Groundnut,752.17,23273.38,5.520458387561314,22.7,418.5
+Madhya Pradesh,District_10,2019,Kharif,Maize,773.08,257.41,0.333,25.1,233.5
+Maharashtra,District_11,2019,Kharif,Barley,330.35,4242.79,12.843,23.7,24.7
+Uttar Pradesh,District_12,2019,Rabi,Cotton,818.72,1325.9,1.619,16.9,149.1
+Madhya Pradesh,District_13,2019,Rabi,Wheat,1278.06,3591.18,2.81,29.6,295.8
+Rajasthan,District_14,2021,Summer,Soybean,3035.58,8644.48,2.848,35.3,50.7
+Madhya Pradesh,District_15,2018,Kharif,Mustard,1112.37,4151.45,3.732,20.6,270.6
+Rajasthan,District_16,2020,Summer,Rice,226.7,655.02,2.889,29.8,202.8
+Rajasthan,District_17,2022,Kharif,Pulses,1561.73,1405.48,0.9,20.8,382.7
+Karnataka,District_18,2020,Rabi,Groundnut,849.01,25333.67,13.842451739289542,25.7,85.3
+Tamil Nadu,District_19,2020,Rabi,Pulses,4317.4,4882.43,1.131,32.5,329.2
+Uttar Pradesh,District_20,2023,Rabi,Mustard,4580.02,10514.17,2.296,22.4,168.6
+Madhya Pradesh,District_21,2018,Kharif,Pulses,4743.14,4339.19,0.915,24.9,609.6
+Haryana,District_22,2023,Rabi,Mustard,625.41,10033.39,16.043,16.0,1378.6
+Uttar Pradesh,District_23,2018,Kharif,Pulses,8021.29,1645.47,0.205,21.7,508.1
+Tamil Nadu,District_24,2018,Summer,Sugarcane,1557.66,942.69,0.605,15.5,218.0
+Uttar Pradesh,District_25,2019,Kharif,Maize,5576.86,9372.61,1.681,27.1,950.3
+Punjab,District_26,2021,Summer,Barley,663.4,16172.39,13.626751629457258,29.2,240.5
+Haryana,District_27,2019,Kharif,Barley,813.55,756.41,0.93,23.9,71.8
+Tamil Nadu,District_28,2021,Summer,Cotton,1442.35,1256.5,0.871,26.4,143.8
+Karnataka,District_29,2023,Rabi,Rice,1276.5,2333.58,1.828,23.4,273.0
+Madhya Pradesh,District_30,2021,Summer,Rice,3846.09,33851.44,8.802,28.7,287.4
+Gujarat,District_31,2023,Rabi,Cotton,869.46,6937.54,7.979,25.6,60.3
+Tamil Nadu,District_32,2020,Rabi,Soybean,3514.37,409.06,0.116,15.1,61.9
+Maharashtra,District_33,2020,Summer,Barley,2280.69,2592.88,1.137,29.7,113.0
+Madhya Pradesh,District_34,2021,Kharif,Soybean,885.9,2061.48,2.327,23.1,227.6
+Tamil Nadu,District_35,2021,Kharif,Mustard,2110.49,512.91,0.243,18.6,252.2
+Punjab,District_36,2023,Kharif,Mustard,683.16,2547.36,3.729,22.8,166.2
+Gujarat,District_37,2019,Kharif,Wheat,11501.19,1929.36,0.168,15.5,76.1
+Punjab,District_38,2023,Kharif,Pulses,76.38,1732.9,9.433203207726987,18.8,595.6
+Gujarat,District_39,2019,Rabi,Rice,2149.4,1617.97,0.753,25.7,63.0
+Maharashtra,District_40,2020,Kharif,Wheat,187.8,27094.62,10.858630505279216,26.1,420.7
+Madhya Pradesh,District_41,2018,Rabi,Maize,875.1,1727.53,1.974,26.5,268.0
+Karnataka,District_42,2021,Rabi,Cotton,1006.66,3211.54,3.19,25.0,413.3
+Punjab,District_43,2019,Rabi,Cotton,4952.43,2729.44,0.551,21.5,104.0
+Punjab,District_44,2023,Summer,Mustard,548.86,1397.55,2.546,24.7,132.4
+Rajasthan,District_45,2020,Summer,Barley,4056.24,3358.52,0.828,22.8,155.1
+Gujarat,District_46,2019,Rabi,Soybean,337.37,3287.97,9.746,16.9,101.4
+West Bengal,District_47,2023,Summer,Rice,4216.12,3359.79,0.797,21.1,177.7
+Madhya Pradesh,District_48,2021,Kharif,Wheat,682.43,821.52,1.204,29.4,524.9
+Gujarat,District_49,2021,Kharif,Soybean,1180.19,2188.15,1.854,32.9,52.6
+Rajasthan,District_50,2022,Rabi,Wheat,783.38,9325.27,11.904,28.3,87.7
+Uttar Pradesh,District_1,2018,Kharif,Pulses,3953.53,2276.23,0.576,32.7,80.4
+Gujarat,District_2,2022,Rabi,Maize,3254.32,3799.68,1.168,25.4,137.6
+Karnataka,District_3,2020,Rabi,Maize,1708.72,3829.75,2.241,33.7,133.2
+Madhya Pradesh,District_4,2019,Kharif,Soybean,346.59,5575.25,16.086,35.3,275.3
+Rajasthan,District_5,2020,Summer,Soybean,536.45,6891.03,12.846,16.3,152.5
+Uttar Pradesh,District_6,2023,Kharif,Soybean,392.06,2295.66,5.855,26.1,189.1
+Haryana,District_7,2021,Kharif,Wheat,115.8,759.76,6.561,25.4,204.1
+Rajasthan,District_8,2022,Rabi,Pulses,3871.19,479.11,0.124,22.9,180.6
+Haryana,District_9,2022,Rabi,Sugarcane,790.11,13718.9,17.363,27.5,260.5
+Madhya Pradesh,District_10,2022,Rabi,Soybean,781.73,9465.19,12.108,25.2,134.6
+Punjab,District_11,2020,Rabi,Barley,4895.65,7895.49,1.613,21.3,554.0
+Rajasthan,District_12,2021,Summer,Rice,681.31,10064.86,14.773,24.9,1133.8
+Maharashtra,District_13,2019,Summer,Rice,473.21,2339.44,4.944,31.0,261.1
+Haryana,District_14,2023,Summer,Wheat,875.9,1167.58,1.333,25.9,178.1
+Karnataka,District_15,2019,Rabi,Soybean,353.3,684.98,1.939,28.1,244.6
+Maharashtra,District_16,2020,Rabi,Mustard,1547.44,581.71,0.376,23.6,61.5
+Tamil Nadu,District_17,2023,Rabi,Cotton,754.71,18365.66,14.760783324725189,27.3,171.4
+Tamil Nadu,District_18,2022,Summer,Sugarcane,660.32,1422.66,2.155,19.0,82.7
+Uttar Pradesh,District_19,2018,Rabi,Barley,605.53,14505.58,10.323043638481662,22.5,223.2
+Punjab,District_20,2020,Kharif,Pulses,986.12,2252.22,2.284,24.5,83.0
+Madhya Pradesh,District_21,2020,Kharif,Mustard,1192.11,1081.0,0.907,18.6,112.6
+Rajasthan,District_22,2021,Rabi,Maize,651.99,577.35,0.886,20.8,33.2
+West Bengal,District_23,2019,Kharif,Mustard,766.04,1233.69,1.61,26.6,58.1
+Karnataka,District_24,2020,Kharif,Wheat,1010.78,25018.18,14.053218283760899,25.6,197.1
+Haryana,District_25,2020,Summer,Sugarcane,913.77,586.21,0.642,29.0,74.1
+Madhya Pradesh,District_26,2022,Rabi,Groundnut,1131.25,71333.42,5.830387578101864,22.0,347.6
+Maharashtra,District_27,2022,Rabi,Groundnut,557.43,844.79,1.516,25.3,69.2
+Tamil Nadu,District_28,2023,Summer,Soybean,2994.68,9181.31,3.066,21.6,213.3
+Karnataka,District_29,2018,Kharif,Soybean,1208.13,2397.36,1.984,28.5,80.7
+West Bengal,District_30,2021,Kharif,Wheat,662.59,1843.02,2.782,31.0,202.0
+Rajasthan,District_31,2018,Rabi,Pulses,1547.48,442.69,0.286,27.4,43.5
+Uttar Pradesh,District_32,2023,Kharif,Soybean,1018.04,2571.93,2.526,30.3,103.3
+West Bengal,District_33,2022,Summer,Cotton,193.67,524.57,2.709,25.2,75.4
+Karnataka,District_34,2019,Summer,Sugarcane,1542.18,239.28,0.155,29.0,300.8
+West Bengal,District_35,2022,Rabi,Wheat,395.64,3566.71,9.015,25.4,214.8
+Karnataka,District_36,2021,Summer,Rice,2791.76,1149.25,0.412,19.9,55.4
+Karnataka,District_37,2022,Summer,Maize,861.13,37291.58,6.910518687086828,26.2,126.1
+Gujarat,District_38,2021,Rabi,Wheat,2392.44,13360.16,5.584,20.0,80.0
+Haryana,District_39,2021,Summer,Wheat,583.93,38030.67,9.407549434413179,36.7,317.4
+Tamil Nadu,District_40,2021,Summer,Groundnut,1176.06,1073.5,0.913,23.3,410.4
+Gujarat,District_41,2023,Summer,Barley,3678.44,3656.3,0.994,28.2,46.8
+Rajasthan,District_42,2021,Kharif,Pulses,837.97,58.5,0.07,24.9,287.5
+Gujarat,District_43,2021,Rabi,Barley,607.4,1953.34,3.216,18.8,76.8
+Punjab,District_44,2019,Rabi,Cotton,2111.26,3455.59,1.637,15.5,121.2
+Punjab,District_45,2018,Rabi,Rice,2070.74,3755.86,1.814,28.7,152.3
+Tamil Nadu,District_46,2020,Kharif,Groundnut,633.49,2797.4,4.416,32.7,634.8
+West Bengal,District_47,2018,Kharif,Rice,150.59,3294.1,10.847568083373048,21.3,66.5
+Haryana,District_48,2021,Rabi,Cotton,595.84,50.91,0.085,16.7,289.4
+Tamil Nadu,District_49,2019,Kharif,Barley,2158.91,4377.94,2.028,23.4,58.1
+Karnataka,District_50,2022,Rabi,Wheat,505.21,6155.86,12.185,20.3,55.0
+Maharashtra,District_1,2019,Kharif,Soybean,1084.7,22182.04,13.162278518628002,21.7,151.8
+Haryana,District_2,2021,Summer,Soybean,568.22,5182.83,9.121,28.1,151.0
+Haryana,District_3,2019,Summer,Mustard,158.83,2450.13,15.426,24.7,15.4
+Karnataka,District_4,2019,Rabi,Maize,558.09,15637.28,14.882621151431868,20.9,375.3
+Karnataka,District_5,2021,Kharif,Pulses,2149.8,86.83,0.04,27.9,26.8
+Uttar Pradesh,District_6,2023,Kharif,Cotton,102.49,1376.88,13.434,28.3,132.1
+Tamil Nadu,District_7,2019,Summer,Maize,1411.16,945.09,0.67,23.3,429.3
+Karnataka,District_8,2020,Summer,Pulses,334.93,2830.52,8.451,25.7,869.0
+Punjab,District_9,2020,Kharif,Maize,2015.14,110.16,0.055,27.6,111.0
+Rajasthan,District_10,2019,Kharif,Barley,2240.2,21578.52,9.632,27.1,47.2
+Maharashtra,District_11,2023,Kharif,Pulses,923.39,2049.36,2.219,25.2,416.7
+Tamil Nadu,District_12,2022,Kharif,Barley,925.5,4808.76,5.196,32.2,296.5
+Madhya Pradesh,District_13,2021,Kharif,Wheat,489.62,4165.69,8.508,27.9,100.4
+Punjab,District_14,2020,Kharif,Groundnut,285.55,19805.89,8.888514964741164,22.7,90.7
+West Bengal,District_15,2022,Rabi,Barley,5991.48,182.56,0.03,22.8,83.6
+Karnataka,District_16,2019,Kharif,Soybean,461.71,3527.98,7.641,22.2,112.7
+Madhya Pradesh,District_17,2022,Summer,Maize,5259.53,16635.05,3.163,28.2,191.1
+Karnataka,District_18,2018,Rabi,Mustard,464.29,2573.5,5.543,21.9,94.4
+Haryana,District_19,2020,Kharif,Sugarcane,1854.17,715.58,0.386,22.9,104.4
+Punjab,District_20,2019,Summer,Pulses,351.49,1204.92,3.428,30.3,247.9
+Haryana,District_21,2021,Rabi,Cotton,1850.84,1653.4,0.893,26.0,45.3
+Uttar Pradesh,District_22,2023,Summer,Mustard,791.88,1010.73,1.276,31.0,109.9
+Haryana,District_23,2019,Kharif,Soybean,802.3,2370.33,2.954,29.0,38.8
+Uttar Pradesh,District_24,2021,Kharif,Barley,2018.32,28634.6,14.187,19.1,161.9
+Uttar Pradesh,District_25,2023,Kharif,Groundnut,685.99,1216.77,1.774,24.5,31.5
+Madhya Pradesh,District_26,2023,Kharif,Wheat,262.92,1434.38,5.456,29.9,302.5
+Karnataka,District_27,2019,Rabi,Sugarcane,2347.97,5941.23,2.53,18.9,51.8
+West Bengal,District_28,2022,Rabi,Rice,348.66,2293.35,6.578,27.1,35.9
+Haryana,District_29,2022,Summer,Mustard,1838.15,405.95,0.221,24.8,111.0
+Punjab,District_30,2023,Kharif,Groundnut,2901.54,2719.54,0.937,16.2,583.4
+Uttar Pradesh,District_31,2022,Summer,Rice,753.33,2570.0,3.412,25.6,262.2
+Karnataka,District_32,2018,Rabi,Sugarcane,3577.26,12881.11,3.601,20.8,31.9
+Maharashtra,District_33,2023,Kharif,Cotton,1775.4,693.51,0.391,19.2,50.7
+Tamil Nadu,District_34,2023,Kharif,Cotton,546.83,13010.07,5.4741563614008495,25.0,108.2
+Madhya Pradesh,District_35,2021,Rabi,Maize,4453.43,2574.1,0.578,15.3,889.5
+West Bengal,District_36,2022,Rabi,Sugarcane,350.14,565.71,1.616,21.6,70.0
+Gujarat,District_37,2023,Rabi,Sugarcane,752.42,418.57,0.556,37.8,70.5
+Madhya Pradesh,District_38,2018,Rabi,Rice,892.2,54262.18,13.011715032953248,28.3,503.7
+Maharashtra,District_39,2021,Rabi,Groundnut,2008.66,2345.2,1.168,20.6,173.5
+Tamil Nadu,District_40,2019,Kharif,Pulses,3345.71,12146.01,3.63,32.0,344.6
+Maharashtra,District_41,2023,Rabi,Rice,3142.56,229.94,0.073,20.0,83.0
+Haryana,District_42,2018,Kharif,Wheat,1371.62,155833.33,11.043807190828081,22.2,136.8
+Uttar Pradesh,District_43,2020,Kharif,Cotton,828.59,11382.89,13.738,19.3,425.2
+West Bengal,District_44,2018,Rabi,Cotton,176.62,2032.13,11.506,26.3,132.2
+Rajasthan,District_45,2018,Rabi,Maize,294.67,1883.24,6.391,31.8,364.5
+Uttar Pradesh,District_46,2021,Kharif,Wheat,6416.68,8972.3,1.398,20.0,202.3
+Rajasthan,District_47,2019,Rabi,Cotton,174.85,8231.9,6.985428588682017,14.7,64.6
+Tamil Nadu,District_48,2020,Rabi,Rice,500.45,3919.79,7.833,30.5,146.5
+Karnataka,District_49,2022,Rabi,Wheat,3444.75,3030.0,0.88,32.8,325.4
+Gujarat,District_50,2022,Summer,Rice,1352.5,6916.05,5.114,15.0,253.5
+Punjab,District_1,2018,Kharif,Pulses,2774.0,218.64,0.079,27.3,143.7
+Uttar Pradesh,District_2,2021,Summer,Pulses,1887.16,1708.02,0.905,26.1,32.7
+West Bengal,District_3,2021,Rabi,Cotton,4767.52,252.07,0.053,21.1,35.3
+Maharashtra,District_4,2022,Summer,Cotton,1473.55,7382.65,5.01,18.0,41.8
+West Bengal,District_5,2020,Rabi,Groundnut,2129.09,1081.69,0.508,30.0,98.7
+Tamil Nadu,District_6,2019,Summer,Pulses,531.53,282.2,0.531,25.9,109.8
+Rajasthan,District_7,2020,Rabi,Mustard,1971.07,906.25,0.46,26.3,45.6
+Maharashtra,District_8,2023,Summer,Mustard,737.95,3729.52,5.054,21.9,336.3
+Punjab,District_9,2023,Summer,Maize,697.08,2191.1,3.143,21.0,54.0
+Punjab,District_10,2019,Summer,Pulses,2683.09,512.99,0.191,12.7,49.6
+Uttar Pradesh,District_11,2022,Kharif,Rice,2701.66,231.06,0.086,23.9,159.3
+Tamil Nadu,District_12,2019,Summer,Rice,5933.93,3330.57,0.561,32.2,323.5
+Karnataka,District_13,2021,Kharif,Soybean,5559.5,1247.44,0.224,20.5,768.1
+Tamil Nadu,District_14,2023,Rabi,Wheat,2744.39,2024.1,0.738,17.4,236.5
+Rajasthan,District_15,2018,Summer,Barley,196.28,2346.01,11.952,27.2,525.2
+West Bengal,District_16,2018,Rabi,Mustard,6820.45,5682.23,0.833,28.1,56.3
+Punjab,District_17,2022,Rabi,Cotton,2746.18,10619.21,3.867,22.1,835.3
+West Bengal,District_18,2021,Summer,Maize,509.86,3713.63,7.284,23.3,33.5
+West Bengal,District_19,2020,Kharif,Barley,2273.12,1843.29,0.811,26.3,99.2
+West Bengal,District_20,2021,Summer,Sugarcane,388.67,3093.77,7.96,24.2,232.4
+Punjab,District_21,2018,Rabi,Maize,2035.77,1792.1,0.88,30.0,41.1
+Madhya Pradesh,District_22,2018,Rabi,Sugarcane,294.04,253.7,0.863,37.2,70.7
+Haryana,District_23,2023,Summer,Pulses,488.72,15335.4,9.948284566214202,16.5,62.3
+Rajasthan,District_24,2021,Kharif,Sugarcane,2230.38,11558.29,5.182,31.1,115.8
+Madhya Pradesh,District_25,2021,Kharif,Sugarcane,3206.34,58835.52,18.35,25.5,462.8
+Rajasthan,District_26,2018,Rabi,Groundnut,1518.44,91194.42,12.423102455337244,31.9,150.4
+Maharashtra,District_27,2020,Rabi,Groundnut,823.72,510.8,0.62,28.6,102.5
+Tamil Nadu,District_28,2022,Kharif,Groundnut,132.31,1802.45,13.623,25.3,14.8
+Tamil Nadu,District_29,2022,Summer,Pulses,889.78,128966.69,12.704117870686439,28.8,215.6
+Gujarat,District_30,2021,Rabi,Barley,1869.61,2805.04,1.5,23.0,279.2
+Tamil Nadu,District_31,2022,Kharif,Maize,798.9,4299.77,5.382,21.1,38.1
+Punjab,District_32,2018,Rabi,Maize,1072.15,304.39,0.284,29.1,140.7
+Karnataka,District_33,2018,Summer,Cotton,910.85,3734.74,4.1,20.8,173.2
+Uttar Pradesh,District_34,2021,Kharif,Groundnut,794.96,54063.28,9.996184119987621,28.2,321.1
+Gujarat,District_35,2021,Rabi,Pulses,1183.08,20536.08,17.358,25.2,83.1
+Uttar Pradesh,District_36,2023,Summer,Cotton,834.89,1193.95,1.43,13.4,73.7
+Rajasthan,District_37,2021,Rabi,Wheat,4643.81,1645.05,0.354,22.1,103.0
+Uttar Pradesh,District_38,2020,Summer,Cotton,120.73,546.56,4.527,26.7,414.7
+Uttar Pradesh,District_39,2022,Summer,Barley,635.34,831.52,1.309,23.0,342.1
+Gujarat,District_40,2021,Kharif,Mustard,459.32,169.81,0.37,12.3,145.9
+Maharashtra,District_41,2019,Summer,Sugarcane,1365.27,2624.83,1.923,31.6,335.6
+West Bengal,District_42,2023,Rabi,Groundnut,1184.58,28714.74,8.052145301288592,25.8,22.3
+Tamil Nadu,District_43,2019,Summer,Mustard,5553.55,5080.41,0.915,27.2,279.6
+Tamil Nadu,District_44,2018,Summer,Cotton,7716.7,23140.94,2.999,22.6,60.6
+Punjab,District_45,2022,Kharif,Pulses,506.19,14911.29,14.737425820384935,27.7,610.1
+Gujarat,District_46,2021,Summer,Sugarcane,1097.18,1312.63,1.196,34.2,63.3
+Punjab,District_47,2019,Summer,Maize,1334.49,954.07,0.715,21.3,75.0
+Karnataka,District_48,2022,Rabi,Rice,493.83,1010.52,2.046,33.3,232.7
+Karnataka,District_49,2018,Kharif,Sugarcane,2055.72,226.88,0.11,27.0,251.4
+Punjab,District_50,2020,Kharif,Barley,863.07,3129.08,3.626,20.7,103.8
+Gujarat,District_1,2023,Kharif,Barley,377.05,38.22,0.101,36.1,199.8
+Punjab,District_2,2022,Summer,Cotton,829.18,7238.17,8.729,27.0,220.6
+Tamil Nadu,District_3,2022,Kharif,Wheat,404.37,3320.34,8.211,28.4,203.3
+Madhya Pradesh,District_4,2020,Summer,Barley,3092.23,6046.05,1.955,23.7,107.4
+Haryana,District_5,2022,Summer,Barley,7343.41,14552.59,1.982,21.0,222.3
+Uttar Pradesh,District_6,2018,Rabi,Pulses,1400.83,4016.6,2.867,25.8,457.2
+Haryana,District_7,2018,Rabi,Cotton,1225.71,34453.22,11.63362610956493,32.9,55.7
+Gujarat,District_8,2020,Rabi,Sugarcane,1277.21,7577.35,5.933,23.5,75.8
+Haryana,District_9,2023,Rabi,Wheat,3576.84,957.48,0.268,24.9,151.7
+Karnataka,District_10,2021,Rabi,Mustard,3500.63,2086.9,0.596,32.3,63.8
+Rajasthan,District_11,2019,Summer,Rice,976.86,100.29,0.103,23.5,35.1
+Uttar Pradesh,District_12,2021,Summer,Groundnut,1411.76,770.25,0.546,27.6,355.8
+West Bengal,District_13,2022,Kharif,Maize,2106.21,1683.29,0.799,29.4,25.0
+Gujarat,District_14,2019,Summer,Barley,351.54,6764.28,19.242,24.0,107.6
+Uttar Pradesh,District_15,2020,Summer,Cotton,3687.15,967.25,0.262,26.5,272.4
+Haryana,District_16,2020,Rabi,Groundnut,6215.69,459.71,0.074,28.3,183.7
+Karnataka,District_17,2023,Summer,Maize,3515.83,175.69,0.05,23.0,108.9
+Maharashtra,District_18,2019,Rabi,Maize,315.58,1218.5,3.861,29.1,61.7
+Madhya Pradesh,District_19,2018,Kharif,Mustard,152.93,55618.86,9.082375193462987,22.3,195.4
+West Bengal,District_20,2019,Kharif,Mustard,2227.69,4476.79,2.01,21.6,67.3
+Madhya Pradesh,District_21,2022,Summer,Mustard,512.76,12202.17,7.804632242046524,17.4,183.6
+Uttar Pradesh,District_22,2018,Kharif,Soybean,1461.38,772.72,0.529,22.5,166.1
+Karnataka,District_23,2020,Summer,Soybean,5090.59,281.41,0.055,20.9,167.5
+Karnataka,District_24,2019,Kharif,Maize,568.52,477.41,0.84,23.0,88.9
+Haryana,District_25,2021,Rabi,Mustard,751.78,2576.8,3.428,28.1,756.0
+Tamil Nadu,District_26,2023,Rabi,Pulses,1446.24,149.73,0.104,16.4,197.7
+Haryana,District_27,2021,Rabi,Barley,299.61,658.6,2.198,15.1,118.8
+Tamil Nadu,District_28,2023,Rabi,Groundnut,513.96,1237.02,2.407,21.3,183.4
+Tamil Nadu,District_29,2022,Summer,Groundnut,1124.23,411.01,0.366,27.3,79.9
+West Bengal,District_30,2021,Kharif,Soybean,812.04,123.28,0.152,26.4,109.0
+Haryana,District_31,2019,Summer,Maize,2015.07,4603.08,2.284,21.2,1005.8
+Maharashtra,District_32,2019,Rabi,Cotton,17430.55,3193.29,0.183,30.8,80.3
+Punjab,District_33,2021,Summer,Sugarcane,1210.92,9590.66,7.92,21.7,139.5
+Punjab,District_34,2019,Kharif,Sugarcane,472.62,563.61,1.193,27.3,103.0
+Haryana,District_35,2022,Summer,Soybean,4528.93,9319.69,2.058,23.2,64.6
+Haryana,District_36,2018,Kharif,Cotton,223.9,29553.47,12.311029830035622,20.7,207.9
+Madhya Pradesh,District_37,2022,Summer,Soybean,273.44,4417.47,16.155,22.0,152.8
+West Bengal,District_38,2023,Kharif,Sugarcane,604.8,1194.04,1.974,28.7,307.6
+Haryana,District_39,2022,Kharif,Cotton,826.43,3705.68,4.484,26.8,283.9
+Madhya Pradesh,District_40,2023,Rabi,Mustard,590.47,1111.34,1.882,29.8,305.1
+Tamil Nadu,District_41,2019,Kharif,Maize,1062.61,865.73,0.815,26.8,71.2
+Karnataka,District_42,2018,Rabi,Groundnut,1443.38,8307.31,5.755,16.9,247.8
+Karnataka,District_43,2019,Rabi,Pulses,3193.78,2419.76,0.758,35.6,252.7
+Tamil Nadu,District_44,2020,Rabi,Wheat,1201.33,18172.11,15.127,26.9,65.6
+Gujarat,District_45,2019,Summer,Maize,625.19,1535.12,2.455,27.6,115.0
+Madhya Pradesh,District_46,2023,Summer,Mustard,3024.94,1786.9,0.591,23.1,46.3
+Madhya Pradesh,District_47,2019,Summer,Sugarcane,484.1,1274.4,2.633,30.6,253.6
+Tamil Nadu,District_48,2019,Summer,Mustard,214.3,555.42,2.592,19.5,252.7
+Maharashtra,District_49,2018,Kharif,Soybean,3662.7,10113.61,2.761,28.0,466.0
+Rajasthan,District_50,2019,Kharif,Cotton,3435.28,79107.86,7.421834455937677,14.6,123.6
