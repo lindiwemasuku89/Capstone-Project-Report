@@ -318,8 +318,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact and Support
 
 ### 👥 Project Team
-- **Developer**: [Your Name]
-- **Institution**: [Your Institution]
+- **Developer**: Lindiwe Masuku
+- **Institution**: QCTO Workplace Module Program
 - **Course**: Data Science Capstone Project
 
 ### 🔗 Links
