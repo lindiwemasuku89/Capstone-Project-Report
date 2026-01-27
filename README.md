@@ -173,6 +173,11 @@ Power BI Desktop (Latest version)
    - Load the prepared datasets
    - Build visualizations using provided templates
 
+4. Open Indian_Agriculture_Analysis.ipynb
+5. Run all cells with Ctrl+Shift+Enter (or Kernel → Run All)
+6. Notebook creates sample data and runs complete analysis
+7. All visualizations display with explained insights
+
 ## 🔄 Data Analysis Pipeline
 
 ### 1. Data Collection
